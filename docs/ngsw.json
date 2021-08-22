@@ -1,0 +1,89 @@
+{
+  "configVersion": 1,
+  "timestamp": 1629647004370,
+  "index": "https://renji-xd.github.io/ebook-reader/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://renji-xd.github.io/ebook-reader/favicon.ico",
+        "https://renji-xd.github.io/ebook-reader/index.html",
+        "https://renji-xd.github.io/ebook-reader/main.8ef83c8bf69689a95e52.js",
+        "https://renji-xd.github.io/ebook-reader/manifest.webmanifest",
+        "https://renji-xd.github.io/ebook-reader/polyfills.13c65cecb8285cb3ebf7.js",
+        "https://renji-xd.github.io/ebook-reader/runtime.7b63b9fd40098a2e8207.js",
+        "https://renji-xd.github.io/ebook-reader/styles.c3a6a262fdb1d7dfb224.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://renji-xd.github.io/ebook-reader/assets/favicon/apple-touch-icon.png",
+        "https://renji-xd.github.io/ebook-reader/assets/favicon/favicon-16x16.png",
+        "https://renji-xd.github.io/ebook-reader/assets/favicon/favicon-32x32.png",
+        "https://renji-xd.github.io/ebook-reader/assets/favicon/safari-pinned-tab.svg",
+        "https://renji-xd.github.io/ebook-reader/assets/icons/icon-128x128.png",
+        "https://renji-xd.github.io/ebook-reader/assets/icons/icon-144x144.png",
+        "https://renji-xd.github.io/ebook-reader/assets/icons/icon-152x152.png",
+        "https://renji-xd.github.io/ebook-reader/assets/icons/icon-192x192.png",
+        "https://renji-xd.github.io/ebook-reader/assets/icons/icon-384x384.png",
+        "https://renji-xd.github.io/ebook-reader/assets/icons/icon-512x512.png",
+        "https://renji-xd.github.io/ebook-reader/assets/icons/icon-72x72.png",
+        "https://renji-xd.github.io/ebook-reader/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://renji-xd.github.io/ebook-reader/assets/favicon/apple-touch-icon.png": "e53bcf30663ea1ae5a8539c7776f04ec626e9d07",
+    "https://renji-xd.github.io/ebook-reader/assets/favicon/favicon-16x16.png": "05bbfd600d2046a43569525dcdf4dab50ffcc6f0",
+    "https://renji-xd.github.io/ebook-reader/assets/favicon/favicon-32x32.png": "3ae821dac689e8035c0914ea8b28ad5aa857cd62",
+    "https://renji-xd.github.io/ebook-reader/assets/favicon/safari-pinned-tab.svg": "73f78433149bba5215ec933740028662dcfb98a2",
+    "https://renji-xd.github.io/ebook-reader/assets/icons/icon-128x128.png": "7c3c49d153497f8561e31c597d59aad4a5c32ca7",
+    "https://renji-xd.github.io/ebook-reader/assets/icons/icon-144x144.png": "ff2dec4f147ef56e1aaf3d08ae5bf5df6111eddb",
+    "https://renji-xd.github.io/ebook-reader/assets/icons/icon-152x152.png": "03594e87428ee63294213d78faf872e70d2058e2",
+    "https://renji-xd.github.io/ebook-reader/assets/icons/icon-192x192.png": "c47a898de4cfe5ad175d034cf01c24b7a6cc9859",
+    "https://renji-xd.github.io/ebook-reader/assets/icons/icon-384x384.png": "ba5467f0981936862444a353802e49748b44204a",
+    "https://renji-xd.github.io/ebook-reader/assets/icons/icon-512x512.png": "6c8805d8626d3b57cadeb90721a504428dda9727",
+    "https://renji-xd.github.io/ebook-reader/assets/icons/icon-72x72.png": "9f073e64d9311e3c3d7f8979b88904011a2b1270",
+    "https://renji-xd.github.io/ebook-reader/assets/icons/icon-96x96.png": "fb8faf9a83e40e8b9ba5e0b72eb79d134c2c148a",
+    "https://renji-xd.github.io/ebook-reader/favicon.ico": "1cf32db3b09faa21c4f560608dc4e2b22de39cd5",
+    "https://renji-xd.github.io/ebook-reader/index.html": "e603bd85153a696506aee2ca285b52de5a63a025",
+    "https://renji-xd.github.io/ebook-reader/main.8ef83c8bf69689a95e52.js": "eaf92f9cf8d82d108fc63dcbc158954622b21b7f",
+    "https://renji-xd.github.io/ebook-reader/manifest.webmanifest": "b653d1d3c70a953da75787a478ab0ce80484f082",
+    "https://renji-xd.github.io/ebook-reader/polyfills.13c65cecb8285cb3ebf7.js": "0fbfb670f9db60440fa7ede09de7e296157dbb18",
+    "https://renji-xd.github.io/ebook-reader/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "https://renji-xd.github.io/ebook-reader/styles.c3a6a262fdb1d7dfb224.css": "bc3f9e0effc5c71711ed71b703421d7613dbb7c3"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

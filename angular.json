@@ -57,6 +57,7 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
+              "outputPath": "docs",
               "budgets": [
                 {
                   "type": "initial",
@@ -137,5 +138,5 @@
       }
     }
   },
-  "defaultProject": "ebook-reader"
+  "defaultProject": "ebook-reader",
 }
