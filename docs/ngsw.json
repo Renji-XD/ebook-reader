@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1629647004370,
+  "timestamp": 1629739483401,
   "index": "https://renji-xd.github.io/ebook-reader/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://renji-xd.github.io/ebook-reader/favicon.ico",
         "https://renji-xd.github.io/ebook-reader/index.html",
-        "https://renji-xd.github.io/ebook-reader/main.8ef83c8bf69689a95e52.js",
+        "https://renji-xd.github.io/ebook-reader/main.c7fa7f616ef07689a4b6.js",
         "https://renji-xd.github.io/ebook-reader/manifest.webmanifest",
         "https://renji-xd.github.io/ebook-reader/polyfills.13c65cecb8285cb3ebf7.js",
         "https://renji-xd.github.io/ebook-reader/runtime.7b63b9fd40098a2e8207.js",
@@ -60,8 +60,8 @@
     "https://renji-xd.github.io/ebook-reader/assets/icons/icon-72x72.png": "9f073e64d9311e3c3d7f8979b88904011a2b1270",
     "https://renji-xd.github.io/ebook-reader/assets/icons/icon-96x96.png": "fb8faf9a83e40e8b9ba5e0b72eb79d134c2c148a",
     "https://renji-xd.github.io/ebook-reader/favicon.ico": "1cf32db3b09faa21c4f560608dc4e2b22de39cd5",
-    "https://renji-xd.github.io/ebook-reader/index.html": "e603bd85153a696506aee2ca285b52de5a63a025",
-    "https://renji-xd.github.io/ebook-reader/main.8ef83c8bf69689a95e52.js": "eaf92f9cf8d82d108fc63dcbc158954622b21b7f",
+    "https://renji-xd.github.io/ebook-reader/index.html": "d68629dff05038b21692188564128004b52c0cfa",
+    "https://renji-xd.github.io/ebook-reader/main.c7fa7f616ef07689a4b6.js": "f12f7c2a26e2b604e31340ce04b912f245d0ab05",
     "https://renji-xd.github.io/ebook-reader/manifest.webmanifest": "b653d1d3c70a953da75787a478ab0ce80484f082",
     "https://renji-xd.github.io/ebook-reader/polyfills.13c65cecb8285cb3ebf7.js": "0fbfb670f9db60440fa7ede09de7e296157dbb18",
     "https://renji-xd.github.io/ebook-reader/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
