@@ -1,5 +1,5 @@
 const build = [
-  "/_app/start-cee16691.js",
+  "/_app/start-8f4121ee.js",
   "/_app/pages/__layout.svelte-98977e55.js",
   "/_app/assets/pages/__layout.svelte-30ab4994.css",
   "/_app/pages/__error.svelte-e3308680.js",
@@ -44,7 +44,7 @@ const prerendered = [
   "/manage",
   "/settings"
 ];
-const version = "1651356090470";
+const version = "1651356349469";
 /**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
