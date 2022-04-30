@@ -50,14 +50,14 @@
         <Fa icon={faExpand} />
       </div>
     {/if}
-    <a on:click={() => dispatch('settingsClick')} href="/settings">
+    <a on:click={() => dispatch('settingsClick')} href="/ebook-reader/settings">
       <span
         class="flex h-full items-center text-xl xl:text-lg {pHeaderFa} {opacityHeaderIcon} cursor-pointer"
       >
         <Fa icon={faCog} />
       </span>
     </a>
-    <a on:click={() => dispatch('bookManagerClick')} href="/manage">
+    <a on:click={() => dispatch('bookManagerClick')} href="/ebook-reader/manage">
       <span
         class="flex h-full items-center text-xl xl:text-lg {pHeaderFa} {opacityHeaderIcon} cursor-pointer"
       >

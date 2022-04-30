@@ -25,7 +25,7 @@ const config = {
       base: '/ebook-reader'
     },
     prerender: {
-      default: false
+      default: true
     },
     vite: {
       ssr: {

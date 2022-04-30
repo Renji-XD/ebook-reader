@@ -1,14 +1,14 @@
 const build = [
-  "/ebook-reader/_app/start-f5fff4a3.js",
+  "/ebook-reader/_app/start-7669e579.js",
   "/ebook-reader/_app/pages/__layout.svelte-98977e55.js",
   "/ebook-reader/_app/assets/pages/__layout.svelte-30ab4994.css",
-  "/ebook-reader/_app/pages/__error.svelte-e3308680.js",
+  "/ebook-reader/_app/pages/__error.svelte-4f852987.js",
   "/ebook-reader/_app/pages/b/_id_integer_.svelte-de85ded9.js",
-  "/ebook-reader/_app/pages/b/index.svelte-58fb15ea.js",
+  "/ebook-reader/_app/pages/b/index.svelte-5ed28c50.js",
   "/ebook-reader/_app/assets/pages/b/index.svelte-bba36acd.css",
   "/ebook-reader/_app/pages/index.svelte-71d951da.js",
-  "/ebook-reader/_app/pages/manage/index.svelte-a57e3d96.js",
-  "/ebook-reader/_app/pages/settings/index.svelte-eddacabd.js",
+  "/ebook-reader/_app/pages/manage/index.svelte-a226fd35.js",
+  "/ebook-reader/_app/pages/settings/index.svelte-9a89ebf2.js",
   "/ebook-reader/_app/chunks/index-2fb0f594.js",
   "/ebook-reader/_app/chunks/singletons-d1fb5791.js",
   "/ebook-reader/_app/chunks/stores-35b585f4.js",
@@ -39,8 +39,13 @@ const files = [
   "/ebook-reader/manifest.webmanifest",
   "/ebook-reader/safari-pinned-tab.svg"
 ];
-const prerendered = [];
-const version = "1651357447735";
+const prerendered = [
+  "/ebook-reader",
+  "/ebook-reader/b",
+  "/ebook-reader/manage",
+  "/ebook-reader/settings"
+];
+const version = "1651358486833";
 /**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors

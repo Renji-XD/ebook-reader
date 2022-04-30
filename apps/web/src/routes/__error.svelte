@@ -3,6 +3,6 @@
 
   export const load: ErrorLoad = () => ({
     status: 302,
-    redirect: '/manage'
+    redirect: '/ebook-reader/manage'
   });
 </script>

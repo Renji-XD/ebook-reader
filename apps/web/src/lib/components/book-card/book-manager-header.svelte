@@ -171,7 +171,7 @@
           </label>
         {/if}
 
-        <a href="/settings">
+        <a href="/ebook-reader/settings">
           <span
             class="flex h-full items-center text-xl xl:text-lg {pHeaderFa} {opacityHeaderIcon} cursor-pointer"
             in:scale={inAnimationParams}
