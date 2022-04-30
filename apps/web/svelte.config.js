@@ -17,10 +17,15 @@ const config = {
 
   kit: {
     adapter: adapter({
-      fallback: '404.html'
+      fallback: null,
+      pages: 'docs',
+      assets: 'docs'
     }),
+    paths: {
+      base: '/ebook-reader'
+    },
     prerender: {
-      default: true
+      default: false
     },
     vite: {
       ssr: {
