@@ -1,5 +1,0 @@
-import{S as m,i as f,a as p,l as _,e as v,I as b,d as i,o as h,c as $,b as y,h as c,Z as g,n as u}from"../chunks/index-2fb0f594.js";import{u as d,v as x,h as I,y as q}from"../chunks/format-page-title-3c1ce953.js";import{t as E}from"../chunks/tap-7ad8a228.js";import"../chunks/singletons-d1fb5791.js";import"../chunks/store-9e108e48.js";/**
- * @license BSD-3-Clause
- * Copyright (c) 2022, ッツ Reader Authors
- * All rights reserved.
- */function H(n,e){const t=e.subscribe();return{destroy:()=>t.unsubscribe()}}function N(n){let e,t,s,r,l;return document.title=e=d("Home"),{c(){t=_(),s=v("div")},l(a){b('[data-svelte="svelte-1o30anf"]',document.head).forEach(i),t=h(a),s=$(a,"DIV",{}),y(s).forEach(i)},m(a,o){c(a,t,o),c(a,s,o),r||(l=g(H.call(null,s,n[0])),r=!0)},p(a,[o]){o&0&&e!==(e=d("Home"))&&(document.title=e)},i:u,o:u,d(a){a&&i(t),a&&i(s),r=!1,l()}}}function S(n){return[x.lastItem$.pipe(I(t=>t?`/b/${t.dataId}`:"manage"),E(q))]}class V extends m{constructor(e){super();f(this,e,S,N,p,{})}}export{V as default};
