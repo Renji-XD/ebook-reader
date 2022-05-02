@@ -68,6 +68,12 @@
 
   export let isBookmarkScreen = false;
 
+  export let avoidPageBreak = true;
+
+  export let pageColumns: number;
+
+  export let firstDimensionMargin: number;
+
   const dispatch = createEventDispatcher<{
     contentChange: HTMLElement;
   }>();
@@ -112,15 +118,17 @@
 
   const cssClassOverflowHidden = 'overflow-hidden';
 
+  const gap = 20;
+
   const destroy$ = new Subject<void>();
 
   $: bookmarkData.then(updateBookmarkScreen);
 
-  $: gap = verticalMode ? 0 : 20;
-
   $: if (width) width$.next(width);
 
   $: if (height) height$.next(height);
+
+  $: columnCount = verticalMode ? 1 : pageColumns || Math.ceil(width / 1000);
 
   $: {
     if (htmlContent) {
@@ -241,11 +249,11 @@
   iffBrowser(() => fromEvent<WheelEvent>(document.body, 'wheel', { passive: true }))
     .pipe(throttleTime(50), takeUntil(destroy$))
     .subscribe((ev) => {
-      let multiplier: 1 | -1 = ev.deltaX < 0 ? -1 : 1;
+      let multiplier = (ev.deltaX < 0 ? -1 : 1) * (verticalMode ? -1 : 1);
       if (!ev.deltaX) {
         multiplier = ev.deltaY < 0 ? -1 : 1;
       }
-      concretePageManager?.flipPage(multiplier);
+      concretePageManager?.flipPage(multiplier as -1 | 1);
     });
 
   function onHtmlLoad() {
@@ -310,13 +318,31 @@
   bind:this={scrollEl}
   style:color={fontColor}
   style:font-size="{fontSize}px"
+  style:padding-top={!verticalMode && firstDimensionMargin
+    ? `${firstDimensionMargin}px`
+    : undefined}
+  style:padding-bottom={!verticalMode && firstDimensionMargin
+    ? `${firstDimensionMargin}px`
+    : undefined}
+  style:padding-left={verticalMode && firstDimensionMargin
+    ? `${firstDimensionMargin}px`
+    : undefined}
+  style:padding-right={verticalMode && firstDimensionMargin
+    ? `${firstDimensionMargin}px`
+    : undefined}
+  style:max-width={width ? `${width}px` : undefined}
+  style:max-height={verticalMode && height ? `${height}px` : undefined}
   style:--font-family-serif={fontFamilyGroupOne}
   style:--font-family-sans-serif={fontFamilyGroupTwo}
   style:--book-content-hint-furigana-font-color={hintFuriganaFontColor}
   style:--book-content-hint-furigana-shadow-color={hintFuriganaShadowColor}
   style:--book-content-child-width="{width}px"
   style:--book-content-child-height="{height}px"
-  style:--book-content-column-count={Math.ceil(width / 1000)}
+  style:--book-content-column-count={columnCount}
+  style:--book-content-image-max-width="{verticalMode
+    ? width
+    : (width + gap) / columnCount - gap}px"
+  class:book-content--avoid-page-break={avoidPageBreak}
   class:book-content--writing-vertical-rl={verticalMode}
   class:book-content--writing-horizontal-rl={!verticalMode}
   class:book-content--hide-furigana={hideFurigana}
@@ -367,20 +393,28 @@
   .book-content {
     :global(svg),
     :global(img) {
-      max-width: var(--book-content-child-width, 100vw);
+      max-width: var(--book-content-image-max-width, 100vw);
       max-height: var(--book-content-child-height, 100vh);
     }
-    :global(p) {
-      -webkit-column-break-inside: avoid;
-      page-break-inside: avoid;
+
+    &.book-content--avoid-page-break {
+      :global(p) {
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+    }
+
+    :global(p.ttu-img-container) {
+      // Needed for Blink rendering engine
       break-inside: avoid;
+      text-align: center;
     }
   }
 
   .book-content--writing-vertical-rl {
     .book-content-container {
       column-width: var(--book-content-child-height, 100vh);
-      column-gap: 0;
       width: 100%;
       height: auto;
     }
