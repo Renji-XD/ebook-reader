@@ -48,21 +48,22 @@
     
 
     
-	<link rel="stylesheet" href="/ebook-reader/_app/assets/pages/__layout.svelte-3262f856.css">
+	<link rel="stylesheet" href="/ebook-reader/_app/assets/pages/__layout.svelte-027f2a41.css">
 	<link rel="stylesheet" href="/ebook-reader/_app/assets/css-classes-90564669.css">
-	<link rel="modulepreload" href="/ebook-reader/_app/start-c226bb87.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/start-4f2802aa.js">
 	<link rel="modulepreload" href="/ebook-reader/_app/chunks/index-fca9486f.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/singletons-24dcaf2b.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/chunks/index-4fef9cc1.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/chunks/singletons-d1fb5791.js">
 	<link rel="modulepreload" href="/ebook-reader/_app/pages/__layout.svelte-0e5bf143.js">
 	<link rel="modulepreload" href="/ebook-reader/_app/chunks/stores-c68c1c1f.js">
 	<link rel="modulepreload" href="/ebook-reader/_app/chunks/dialog-manager-f50f3d91.js">
 	<link rel="modulepreload" href="/ebook-reader/_app/chunks/store-9e108e48.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/pages/settings/index.svelte-b240074b.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/format-page-title-aaeb412b.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/pages/settings/index.svelte-1a871fe1.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/chunks/format-page-title-093c0453.js">
 	<link rel="modulepreload" href="/ebook-reader/_app/chunks/storage-28a0ea01.js">
 	<link rel="modulepreload" href="/ebook-reader/_app/chunks/css-classes-d5103e52.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/theme-option-8babf228.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/tap-34b2c849.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/chunks/use-click-outside-e0a5912b.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/chunks/tap-3267680f.js">
 				<script>
 		if ('serviceWorker' in navigator) {
 			navigator.serviceWorker.register('/ebook-reader/service-worker.js');
@@ -80,7 +81,7 @@
 <div class="elevation-4 fixed inset-x-0 top-0 z-10"><div class="relative h-12 bg-gray-700 text-white xl:h-10"><div class="flex h-full justify-end px-4 md:px-8 lg:max-w-4xl xl:max-w-none 2xl:max-w-6xl mx-auto"><div class="flex transform-gpu translate-x-4 xl:translate-x-3"><a href="/ebook-reader/manage"><span class="flex h-full items-center text-xl xl:text-lg p-4 xl:p-3 opacity-60 hover:opacity-100 transition-opacity cursor-pointer"><svg id="" class="svelte-fa svelte-1w3t65e" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 512 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(256 256)" transform-origin="128 0"><g transform="translate(0,0) scale(1,1)"><path d="M96 480h64C177.7 480 192 465.7 192 448S177.7 416 160 416H96c-17.67 0-32-14.33-32-32V128c0-17.67 14.33-32 32-32h64C177.7 96 192 81.67 192 64S177.7 32 160 32H96C42.98 32 0 74.98 0 128v256C0 437 42.98 480 96 480zM504.8 238.5l-144.1-136c-6.975-6.578-17.2-8.375-26-4.594c-8.803 3.797-14.51 12.47-14.51 22.05l-.0918 72l-128-.001c-17.69 0-32.02 14.33-32.02 32v64c0 17.67 14.34 32 32.02 32l128 .001l.0918 71.1c0 9.578 5.707 18.25 14.51 22.05c8.803 3.781 19.03 1.984 26-4.594l144.1-136C514.4 264.4 514.4 247.6 504.8 238.5z" fill="currentColor" transform="translate(-256 -256)"></path></g></g></svg></span></a></div></div></div></div>
 
 <div class="px-4 md:px-8 lg:max-w-4xl xl:max-w-none 2xl:max-w-6xl mx-auto h-full pt-16 xl:pt-14"><div class="max-w-5xl"><div class="grid grid-cols-1 items-center sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 lg:md:gap-8"><div class="sm:col-span-2 lg:col-span-3"><section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">Theme</span></h2>
-  <div class=""><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg border-blue-300" style="color: rgba(0, 0, 0, 0.87);background-color: rgba(255, 255, 255, 1)">ぁあ
+  <div><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg border-blue-300" style="color: rgba(0, 0, 0, 0.87);background-color: rgba(255, 255, 255, 1)">ぁあ
       <span class="absolute inset-0 h-full w-full">
   
   </span>
@@ -106,17 +107,17 @@
   </span>
     </button></div></div></section></div>
   <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">Font size</span></h2>
-  <div class=""><input type="number" class="mt-1 block w-full px-0.5 bg-background-color border-0 border-b-2 border-gray-400/50 focus:ring-0 focus:border-black transition" step="1" min="1" value="20"></div></section>
+  <div><input type="number" class="mt-1 block w-full px-0.5 bg-background-color border-0 border-b-2 border-gray-400/50 focus:ring-0 focus:border-black transition" step="1" min="1" value="20"></div></section>
   <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">Font family (Group 1)</span></h2>
-  <div class=""><input type="text" class="mt-1 block w-full px-0.5 bg-background-color border-0 border-b-2 border-gray-400/50 focus:ring-0 focus:border-black transition" placeholder="Noto Serif JP" value=""></div></section>
+  <div><input type="text" class="mt-1 block w-full px-0.5 bg-background-color border-0 border-b-2 border-gray-400/50 focus:ring-0 focus:border-black transition" placeholder="Noto Serif JP" value=""></div></section>
   <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">Font family (Group 2)</span></h2>
-  <div class=""><input type="text" class="mt-1 block w-full px-0.5 bg-background-color border-0 border-b-2 border-gray-400/50 focus:ring-0 focus:border-black transition" placeholder="Noto Sans JP" value=""></div></section>
+  <div><input type="text" class="mt-1 block w-full px-0.5 bg-background-color border-0 border-b-2 border-gray-400/50 focus:ring-0 focus:border-black transition" placeholder="Noto Sans JP" value=""></div></section>
   <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">Reader Left/right margin</span></h2>
-  <div class=""><input type="number" class="mt-1 block w-full px-0.5 bg-background-color border-0 border-b-2 border-gray-400/50 focus:ring-0 focus:border-black transition" step="1" min="0" value="0"></div></section>
+  <div><input type="number" class="mt-1 block w-full px-0.5 bg-background-color border-0 border-b-2 border-gray-400/50 focus:ring-0 focus:border-black transition" step="1" min="0" value="0"></div></section>
   <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">Reader Max height</span></h2>
-  <div class=""><input type="number" class="mt-1 block w-full px-0.5 bg-background-color border-0 border-b-2 border-gray-400/50 focus:ring-0 focus:border-black transition" step="1" min="0" value="0"></div></section>
+  <div><input type="number" class="mt-1 block w-full px-0.5 bg-background-color border-0 border-b-2 border-gray-400/50 focus:ring-0 focus:border-black transition" step="1" min="0" value="0"></div></section>
   <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">View mode</span></h2>
-  <div class=""><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg border-blue-300" style="">Continuous
+  <div><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg border-blue-300" style="">Continuous
       <span class="absolute inset-0 h-full w-full">
   
   </span>
@@ -126,7 +127,7 @@
   </span>
     </button></div></div></section>
   <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">Writing mode</span></h2>
-  <div class=""><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg" style="">Horizontal
+  <div><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg" style="">Horizontal
       <span class="absolute inset-0 h-full w-full">
   
   </span>
@@ -136,7 +137,7 @@
   </span>
     </button></div></div></section>
   <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">Blur image</span></h2>
-  <div class=""><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg" style="">Off
+  <div><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg" style="">Off
       <span class="absolute inset-0 h-full w-full">
   
   </span>
@@ -146,7 +147,7 @@
   </span>
     </button></div></div></section>
   <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">Hide furigana</span></h2>
-  <div class=""><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg border-blue-300" style="">Off
+  <div><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg border-blue-300" style="">Off
       <span class="absolute inset-0 h-full w-full">
   
   </span>
@@ -158,8 +159,8 @@
   <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><div class="flex items-center"><div><span class="capitalize">Hide furigana style</span></div>
   <div><svg id="" class="mx-2 svelte-fa svelte-1w3t65e" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 512 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(256 256)" transform-origin="128 0"><g transform="translate(0,0) scale(1,1)"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z" fill="currentColor" transform="translate(-256 -256)"></path></g></g></svg></div></div>
 
-<div class="max-w-60vw z-10 whitespace-pre-wrap rounded bg-[#333] p-2 text-sm font-bold text-white md:max-w-lg hidden"><div>Furigana is diplayed but grayed out.</div></div></h2>
-  <div class=""><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg border-blue-300" style="">Partial
+</h2>
+  <div><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg border-blue-300" style="">Partial
       <span class="absolute inset-0 h-full w-full">
   
   </span>
@@ -172,11 +173,8 @@
   
   </span>
     </button></div></div></section>
-  <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><div class="flex items-center"><div><span class="capitalize">Persistent storage</span></div>
-  <div><svg id="" class="mx-2 svelte-fa svelte-1w3t65e" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 512 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(256 256)" transform-origin="128 0"><g transform="translate(0,0) scale(1,1)"><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z" fill="currentColor" transform="translate(-256 -256)"></path></g></g></svg></div></div>
-
-<div class="max-w-60vw z-10 whitespace-pre-wrap rounded bg-[#333] p-2 text-sm font-bold text-white md:max-w-lg hidden"><div>Indicates if unlimited Storage for this Page is enabled.</div></div></h2>
-  <div class=""><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg border-blue-300" style="">Off
+  <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">Persistent storage</span></h2>
+  <div><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg border-blue-300" style="">Off
       <span class="absolute inset-0 h-full w-full">
   
   </span>
@@ -186,7 +184,7 @@
   </span>
     </button></div></div></section>
   <section class="pb-8"><h2 class="mb-2 text-xl font-medium"><span class="capitalize">Auto position on resize</span></h2>
-  <div class=""><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg" style="">Off
+  <div><div class="-m-1"><button class="m-1 rounded-md border border-gray-400 bg-white p-2 text-lg" style="">Off
       <span class="absolute inset-0 h-full w-full">
   
   </span>
@@ -200,10 +198,10 @@
 
 
 
-		<script type="module" data-hydrate="s8c8d2">
-		import { start } from "/ebook-reader/_app/start-c226bb87.js";
+		<script type="module" data-hydrate="ckv4h8">
+		import { start } from "/ebook-reader/_app/start-4f2802aa.js";
 		start({
-			target: document.querySelector('[data-hydrate="s8c8d2"]').parentNode,
+			target: document.querySelector('[data-hydrate="ckv4h8"]').parentNode,
 			paths: {"base":"/ebook-reader","assets":"/ebook-reader"},
 			session: {},
 			route: true,
@@ -214,7 +212,7 @@
 				error: null,
 				nodes: [
 					import("/ebook-reader/_app/pages/__layout.svelte-0e5bf143.js"),
-						import("/ebook-reader/_app/pages/settings/index.svelte-b240074b.js")
+						import("/ebook-reader/_app/pages/settings/index.svelte-1a871fe1.js")
 				],
 				params: {},
 				routeId: "settings"
