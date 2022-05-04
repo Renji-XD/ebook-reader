@@ -1,27 +1,27 @@
 const build = [
-  "/ebook-reader/_app/start-6883a0d8.js",
-  "/ebook-reader/_app/pages/__layout.svelte-0e5bf143.js",
+  "/ebook-reader/_app/start-25728250.js",
+  "/ebook-reader/_app/pages/__layout.svelte-e7575aa4.js",
   "/ebook-reader/_app/assets/pages/__layout.svelte-027f2a41.css",
-  "/ebook-reader/_app/pages/__error.svelte-fe3a9b7f.js",
-  "/ebook-reader/_app/pages/b/_id_integer_.svelte-629edd6a.js",
-  "/ebook-reader/_app/pages/b/index.svelte-07465bf4.js",
+  "/ebook-reader/_app/pages/__error.svelte-2cccb58f.js",
+  "/ebook-reader/_app/pages/b/_id_integer_.svelte-14fa4a1f.js",
+  "/ebook-reader/_app/pages/b/index.svelte-b1bbc9ae.js",
   "/ebook-reader/_app/assets/pages/b/index.svelte-29af7821.css",
-  "/ebook-reader/_app/pages/index.svelte-cf21aff0.js",
-  "/ebook-reader/_app/pages/manage/index.svelte-78c05c6c.js",
-  "/ebook-reader/_app/pages/settings/index.svelte-844eef8d.js",
-  "/ebook-reader/_app/chunks/index-fca9486f.js",
-  "/ebook-reader/_app/chunks/index-4fef9cc1.js",
+  "/ebook-reader/_app/pages/index.svelte-6b629ebf.js",
+  "/ebook-reader/_app/pages/manage/index.svelte-46ff7dbc.js",
+  "/ebook-reader/_app/pages/settings/index.svelte-594e67a8.js",
+  "/ebook-reader/_app/chunks/index-200ea95d.js",
+  "/ebook-reader/_app/chunks/index-d4330c35.js",
   "/ebook-reader/_app/chunks/singletons-d1fb5791.js",
-  "/ebook-reader/_app/chunks/stores-c68c1c1f.js",
+  "/ebook-reader/_app/chunks/stores-2840616d.js",
   "/ebook-reader/_app/chunks/dialog-manager-f50f3d91.js",
   "/ebook-reader/_app/chunks/store-9e108e48.js",
-  "/ebook-reader/_app/chunks/css-classes-d5103e52.js",
+  "/ebook-reader/_app/chunks/css-classes-a328c5aa.js",
   "/ebook-reader/_app/assets/css-classes-90564669.css",
-  "/ebook-reader/_app/chunks/format-page-title-093c0453.js",
-  "/ebook-reader/_app/chunks/use-click-outside-e0a5912b.js",
-  "/ebook-reader/_app/chunks/tap-3267680f.js",
-  "/ebook-reader/_app/chunks/index.es-7b1e7ea8.js",
-  "/ebook-reader/_app/chunks/storage-28a0ea01.js"
+  "/ebook-reader/_app/chunks/format-page-title-db029841.js",
+  "/ebook-reader/_app/chunks/use-click-outside-c6870518.js",
+  "/ebook-reader/_app/chunks/tap-67010267.js",
+  "/ebook-reader/_app/chunks/index.es-efcd32b8.js",
+  "/ebook-reader/_app/chunks/storage-6aceadda.js"
 ];
 const files = [
   "/ebook-reader/.nojekyll",
@@ -46,7 +46,7 @@ const prerendered = [
   "/ebook-reader/manage",
   "/ebook-reader/settings"
 ];
-const version = "1651656060925";
+const version = "1651668957468";
 /**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors

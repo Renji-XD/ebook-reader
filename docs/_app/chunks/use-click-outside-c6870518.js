@@ -1,4 +1,4 @@
-var C=Object.defineProperty,d=Object.defineProperties;var m=Object.getOwnPropertyDescriptors;var u=Object.getOwnPropertySymbols;var h=Object.prototype.hasOwnProperty,f=Object.prototype.propertyIsEnumerable;var b=(o,r,e)=>r in o?C(o,r,{enumerable:!0,configurable:!0,writable:!0,value:e}):o[r]=e,n=(o,r)=>{for(var e in r||(r={}))h.call(r,e)&&b(o,e,r[e]);if(u)for(var e of u(r))f.call(r,e)&&b(o,e,r[e]);return o},t=(o,r)=>d(o,m(r));import{q as k}from"./store-9e108e48.js";import{h as F,j as T}from"./format-page-title-093c0453.js";/**
+var C=Object.defineProperty,d=Object.defineProperties;var m=Object.getOwnPropertyDescriptors;var u=Object.getOwnPropertySymbols;var h=Object.prototype.hasOwnProperty,f=Object.prototype.propertyIsEnumerable;var b=(o,r,e)=>r in o?C(o,r,{enumerable:!0,configurable:!0,writable:!0,value:e}):o[r]=e,n=(o,r)=>{for(var e in r||(r={}))h.call(r,e)&&b(o,e,r[e]);if(u)for(var e of u(r))f.call(r,e)&&b(o,e,r[e]);return o},t=(o,r)=>d(o,m(r));import{q as k}from"./store-9e108e48.js";import{h as F,j as T}from"./format-page-title-db029841.js";/**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
  * All rights reserved.
