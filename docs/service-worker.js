@@ -1,11 +1,11 @@
 const build = [
-  "/ebook-reader/_app/start-25728250.js",
+  "/ebook-reader/_app/start-e4606a9d.js",
   "/ebook-reader/_app/pages/__layout.svelte-e7575aa4.js",
-  "/ebook-reader/_app/assets/pages/__layout.svelte-027f2a41.css",
+  "/ebook-reader/_app/assets/pages/__layout.svelte-865d472a.css",
   "/ebook-reader/_app/pages/__error.svelte-2cccb58f.js",
   "/ebook-reader/_app/pages/b/_id_integer_.svelte-14fa4a1f.js",
-  "/ebook-reader/_app/pages/b/index.svelte-b1bbc9ae.js",
-  "/ebook-reader/_app/assets/pages/b/index.svelte-29af7821.css",
+  "/ebook-reader/_app/pages/b/index.svelte-9a145a8b.js",
+  "/ebook-reader/_app/assets/pages/b/index.svelte-aa463c1e.css",
   "/ebook-reader/_app/pages/index.svelte-6b629ebf.js",
   "/ebook-reader/_app/pages/manage/index.svelte-46ff7dbc.js",
   "/ebook-reader/_app/pages/settings/index.svelte-594e67a8.js",
@@ -46,7 +46,7 @@ const prerendered = [
   "/ebook-reader/manage",
   "/ebook-reader/settings"
 ];
-const version = "1651668957468";
+const version = "1651807335242";
 /**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
