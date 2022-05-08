@@ -1,27 +1,27 @@
 const build = [
-  "/ebook-reader/_app/start-e4606a9d.js",
+  "/ebook-reader/_app/start-259c3be2.js",
   "/ebook-reader/_app/pages/__layout.svelte-e7575aa4.js",
-  "/ebook-reader/_app/assets/pages/__layout.svelte-865d472a.css",
+  "/ebook-reader/_app/assets/pages/__layout.svelte-d60b55fd.css",
   "/ebook-reader/_app/pages/__error.svelte-2cccb58f.js",
   "/ebook-reader/_app/pages/b/_id_integer_.svelte-14fa4a1f.js",
-  "/ebook-reader/_app/pages/b/index.svelte-9a145a8b.js",
+  "/ebook-reader/_app/pages/b/index.svelte-d081e229.js",
   "/ebook-reader/_app/assets/pages/b/index.svelte-aa463c1e.css",
   "/ebook-reader/_app/pages/index.svelte-6b629ebf.js",
-  "/ebook-reader/_app/pages/manage/index.svelte-46ff7dbc.js",
-  "/ebook-reader/_app/pages/settings/index.svelte-594e67a8.js",
+  "/ebook-reader/_app/pages/manage/index.svelte-8025746a.js",
+  "/ebook-reader/_app/pages/settings/index.svelte-74c9f268.js",
   "/ebook-reader/_app/chunks/index-200ea95d.js",
   "/ebook-reader/_app/chunks/index-d4330c35.js",
   "/ebook-reader/_app/chunks/singletons-d1fb5791.js",
   "/ebook-reader/_app/chunks/stores-2840616d.js",
   "/ebook-reader/_app/chunks/dialog-manager-f50f3d91.js",
   "/ebook-reader/_app/chunks/store-9e108e48.js",
-  "/ebook-reader/_app/chunks/css-classes-a328c5aa.js",
+  "/ebook-reader/_app/chunks/css-classes-44c08f55.js",
   "/ebook-reader/_app/assets/css-classes-90564669.css",
   "/ebook-reader/_app/chunks/format-page-title-db029841.js",
   "/ebook-reader/_app/chunks/use-click-outside-c6870518.js",
   "/ebook-reader/_app/chunks/tap-67010267.js",
   "/ebook-reader/_app/chunks/index.es-efcd32b8.js",
-  "/ebook-reader/_app/chunks/storage-6aceadda.js"
+  "/ebook-reader/_app/chunks/storage-d6abef15.js"
 ];
 const files = [
   "/ebook-reader/.nojekyll",
@@ -46,7 +46,7 @@ const prerendered = [
   "/ebook-reader/manage",
   "/ebook-reader/settings"
 ];
-const version = "1651807335242";
+const version = "1652008290251";
 /**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
