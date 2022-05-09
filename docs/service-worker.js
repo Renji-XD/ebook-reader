@@ -1,5 +1,5 @@
 const build = [
-  "/ebook-reader/_app/start-259c3be2.js",
+  "/ebook-reader/_app/start-c664bcde.js",
   "/ebook-reader/_app/pages/__layout.svelte-e7575aa4.js",
   "/ebook-reader/_app/assets/pages/__layout.svelte-d60b55fd.css",
   "/ebook-reader/_app/pages/__error.svelte-2cccb58f.js",
@@ -46,7 +46,7 @@ const prerendered = [
   "/ebook-reader/manage",
   "/ebook-reader/settings"
 ];
-const version = "1652008290251";
+const version = "1652129614846";
 /**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
