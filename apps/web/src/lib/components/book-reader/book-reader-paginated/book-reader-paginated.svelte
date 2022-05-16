@@ -18,6 +18,7 @@
   import { swipe } from 'svelte-gestures';
   import { faBookmark, faSpinner } from '@fortawesome/free-solid-svg-icons';
   import { browser } from '$app/env';
+  import { nextChapter$, tocIsOpen$ } from '$lib/components/book-toc/book-toc';
   import HtmlRenderer from '$lib/components/html-renderer.svelte';
   import { FuriganaStyle } from '$lib/data/furigana-style';
   import type { BooksDbBookmarkData } from '$lib/data/database/books-db/versions/books-db';
@@ -261,11 +262,13 @@
   iffBrowser(() => fromEvent<WheelEvent>(document.body, 'wheel', { passive: true }))
     .pipe(throttleTime(50), takeUntil(destroy$))
     .subscribe((ev) => {
-      let multiplier = (ev.deltaX < 0 ? -1 : 1) * (verticalMode ? -1 : 1);
-      if (!ev.deltaX) {
-        multiplier = ev.deltaY < 0 ? -1 : 1;
+      if (!$tocIsOpen$) {
+        let multiplier = (ev.deltaX < 0 ? -1 : 1) * (verticalMode ? -1 : 1);
+        if (!ev.deltaX) {
+          multiplier = ev.deltaY < 0 ? -1 : 1;
+        }
+        concretePageManager?.flipPage(multiplier as -1 | 1);
       }
-      concretePageManager?.flipPage(multiplier as -1 | 1);
     });
 
   function onHtmlLoad() {
@@ -318,12 +321,42 @@
   }
 
   function onSwipe(ev: CustomEvent<{ direction: 'top' | 'right' | 'left' | 'bottom' }>) {
-    if (!concretePageManager) return;
+    if (!concretePageManager || $tocIsOpen$) return;
     if (ev.detail.direction !== 'left' && ev.detail.direction !== 'right') return;
     const swipeLeft = ev.detail.direction === 'left';
     const nextPage = verticalMode ? !swipeLeft : swipeLeft;
     concretePageManager.flipPage(nextPage ? 1 : -1);
   }
+
+  function onKeydown(ev: KeyboardEvent) {
+    if (!concretePageManager || $tocIsOpen$) return;
+    switch (ev.code) {
+      case 'ArrowLeft':
+        concretePageManager[verticalMode ? 'nextPage' : 'prevPage']();
+        break;
+      case 'ArrowRight':
+        concretePageManager[verticalMode ? 'prevPage' : 'nextPage']();
+        break;
+      case 'ArrowUp':
+        concretePageManager.prevPage();
+        break;
+      case 'ArrowDown':
+        concretePageManager.nextPage();
+        break;
+      default:
+    }
+  }
+
+  nextChapter$.pipe(takeUntil(destroy$)).subscribe((chapterId) => {
+    const nextSectionIndex = sections.findIndex(
+      (section) => section.id === chapterId || section.querySelector(`[id="${chapterId}"]`)
+    );
+
+    if (nextSectionIndex > -1) {
+      sectionIndex$.next(nextSectionIndex);
+      concretePageManager?.scrollTo(0, true);
+    }
+  });
 </script>
 
 <div
@@ -386,6 +419,8 @@
     <Fa icon={faBookmark} />
   </div>
 {/if}
+
+<svelte:window on:keydown={onKeydown} />
 
 <style lang="scss">
   @import '../styles';
