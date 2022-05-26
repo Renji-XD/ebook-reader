@@ -5,8 +5,12 @@
  */
 
 import { Observable, take, type Subject, type BehaviorSubject } from 'rxjs';
+import {
+  sectionProgress$,
+  sectionList$,
+  type SectionWithProgress
+} from '$lib/components/book-reader/book-toc/book-toc';
 import type { PageManager } from '../types';
-import { sectionProgress$, sectionList$, type SectionWithProgress } from '../../book-toc/book-toc';
 
 export class PageManagerPaginated implements PageManager {
   private translateX = 0;
@@ -198,31 +202,31 @@ export class PageManagerPaginated implements PageManager {
   }
 
   private updateSectionData(ref: string, progress: number, emit = true) {
-    if (ref && this.sectionData.has(ref)) {
-      const sections = [...this.sectionData.values()];
-      let currentRefSeen = false;
+    if (!ref || !this.sectionData.has(ref)) return;
 
-      sections.forEach((section) => {
-        const entry = this.sectionData.get(section.reference) as SectionWithProgress;
-        const isCurrentRef = section.reference === ref;
+    const sections = [...this.sectionData.values()];
+    let currentRefSeen = false;
 
-        if (isCurrentRef) {
-          entry.progress = progress;
-        } else if (currentRefSeen) {
-          entry.progress = 0;
-        } else {
-          entry.progress = 100;
-        }
+    sections.forEach((section) => {
+      const entry = this.sectionData.get(section.reference) as SectionWithProgress;
+      const isCurrentRef = section.reference === ref;
 
-        if (!currentRefSeen && isCurrentRef) {
-          currentRefSeen = true;
-        }
-        this.sectionData.set(section.reference, entry);
-      });
-
-      if (emit) {
-        sectionProgress$.next(this.sectionData);
+      if (isCurrentRef) {
+        entry.progress = progress;
+      } else if (currentRefSeen) {
+        entry.progress = 0;
+      } else {
+        entry.progress = 100;
       }
+
+      if (!currentRefSeen && isCurrentRef) {
+        currentRefSeen = true;
+      }
+      this.sectionData.set(section.reference, entry);
+    });
+
+    if (emit) {
+      sectionProgress$.next(this.sectionData);
     }
   }
 }
