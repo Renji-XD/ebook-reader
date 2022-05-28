@@ -48,21 +48,23 @@
     
 
     
-	<link rel="stylesheet" href="/ebook-reader/_app/assets/pages/__layout.svelte-7fd16792.css">
-	<link rel="modulepreload" href="/ebook-reader/_app/start-65c6b082.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/index-32c3e254.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/index-7df42093.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/singletons-d1fb5791.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/pages/__layout.svelte-513985ef.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/stores-ca4ab7da.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/dialog-manager-f50f3d91.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/store-9e108e48.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/pages/index.svelte-54210efa.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/format-page-title-88a0fb5c.js">
-	<link rel="modulepreload" href="/ebook-reader/_app/chunks/tap-05f0a3d8.js">
-				<script>
+	<link rel="stylesheet" href="/ebook-reader/_app/immutable/assets/pages/__layout.svelte-3424b891.css">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/start-05e3bd78.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/index-aced29cb.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/index-dec47dca.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/singletons-d1fb5791.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/pages/__layout.svelte-8c0548f0.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/stores-fc5831e0.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/dialog-manager-2d1393e2.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/store-afb7c6c1.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/pages/index.svelte-ff4e5528.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/format-page-title-d2ff14dd.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/tap-495987ce.js">
+			<script>
 		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('/ebook-reader/service-worker.js');
+			addEventListener('load', () => {
+				navigator.serviceWorker.register('/ebook-reader/service-worker.js');
+			});
 		}
 	</script>
   </head>
@@ -79,10 +81,10 @@
 
 
 
-		<script type="module" data-hydrate="1o2rpc0">
-		import { start } from "/ebook-reader/_app/start-65c6b082.js";
+		<script type="module" data-sveltekit-hydrate="1o2rpc0">
+		import { start } from "/ebook-reader/_app/immutable/start-05e3bd78.js";
 		start({
-			target: document.querySelector('[data-hydrate="1o2rpc0"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1o2rpc0"]').parentNode,
 			paths: {"base":"/ebook-reader","assets":"/ebook-reader"},
 			session: {},
 			route: true,
@@ -91,10 +93,7 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [
-					import("/ebook-reader/_app/pages/__layout.svelte-513985ef.js"),
-						import("/ebook-reader/_app/pages/index.svelte-54210efa.js")
-				],
+				nodes: [0, 4],
 				params: {},
 				routeId: ""
 			}

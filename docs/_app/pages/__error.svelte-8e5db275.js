@@ -1,1 +1,0 @@
-import{S as t,i as o,n as r}from"../chunks/index-32c3e254.js";const n=()=>({status:302,redirect:"/ebook-reader/manage"});class l extends t{constructor(e){super();o(this,e,null,null,r,{})}}export{l as default,n as load};

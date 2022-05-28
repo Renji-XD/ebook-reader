@@ -1,27 +1,27 @@
 const build = [
-  "/ebook-reader/_app/start-65c6b082.js",
-  "/ebook-reader/_app/pages/__layout.svelte-513985ef.js",
-  "/ebook-reader/_app/assets/pages/__layout.svelte-7fd16792.css",
-  "/ebook-reader/_app/pages/__error.svelte-8e5db275.js",
-  "/ebook-reader/_app/pages/b/_id_integer_.svelte-ae8dbe55.js",
-  "/ebook-reader/_app/pages/b/index.svelte-72b70685.js",
-  "/ebook-reader/_app/assets/pages/b/index.svelte-aa463c1e.css",
-  "/ebook-reader/_app/pages/index.svelte-54210efa.js",
-  "/ebook-reader/_app/pages/manage/index.svelte-7d5b3bb2.js",
-  "/ebook-reader/_app/pages/settings/index.svelte-6d26246a.js",
-  "/ebook-reader/_app/chunks/index-32c3e254.js",
-  "/ebook-reader/_app/chunks/index-7df42093.js",
-  "/ebook-reader/_app/chunks/singletons-d1fb5791.js",
-  "/ebook-reader/_app/chunks/stores-ca4ab7da.js",
-  "/ebook-reader/_app/chunks/dialog-manager-f50f3d91.js",
-  "/ebook-reader/_app/chunks/store-9e108e48.js",
-  "/ebook-reader/_app/chunks/css-classes-6ce95777.js",
-  "/ebook-reader/_app/assets/css-classes-90564669.css",
-  "/ebook-reader/_app/chunks/format-page-title-88a0fb5c.js",
-  "/ebook-reader/_app/chunks/use-click-outside-edf556ee.js",
-  "/ebook-reader/_app/chunks/tap-05f0a3d8.js",
-  "/ebook-reader/_app/chunks/index.es-ac3c0587.js",
-  "/ebook-reader/_app/chunks/storage-da02d1de.js"
+  "/ebook-reader/_app/immutable/start-05e3bd78.js",
+  "/ebook-reader/_app/immutable/pages/__layout.svelte-8c0548f0.js",
+  "/ebook-reader/_app/immutable/assets/pages/__layout.svelte-3424b891.css",
+  "/ebook-reader/_app/immutable/pages/__error.svelte-d013972e.js",
+  "/ebook-reader/_app/immutable/pages/b/_id_integer_.svelte-8b2082c4.js",
+  "/ebook-reader/_app/immutable/pages/b/index.svelte-1aabc675.js",
+  "/ebook-reader/_app/immutable/assets/pages/b/index.svelte-aa463c1e.css",
+  "/ebook-reader/_app/immutable/pages/index.svelte-ff4e5528.js",
+  "/ebook-reader/_app/immutable/pages/manage/index.svelte-a831ec55.js",
+  "/ebook-reader/_app/immutable/pages/settings/index.svelte-e0f03e67.js",
+  "/ebook-reader/_app/immutable/chunks/index-aced29cb.js",
+  "/ebook-reader/_app/immutable/chunks/index-dec47dca.js",
+  "/ebook-reader/_app/immutable/chunks/singletons-d1fb5791.js",
+  "/ebook-reader/_app/immutable/chunks/stores-fc5831e0.js",
+  "/ebook-reader/_app/immutable/chunks/dialog-manager-2d1393e2.js",
+  "/ebook-reader/_app/immutable/chunks/store-afb7c6c1.js",
+  "/ebook-reader/_app/immutable/chunks/css-classes-c5fa5b51.js",
+  "/ebook-reader/_app/immutable/assets/css-classes-90564669.css",
+  "/ebook-reader/_app/immutable/chunks/format-page-title-d2ff14dd.js",
+  "/ebook-reader/_app/immutable/chunks/use-click-outside-ebc7d6ba.js",
+  "/ebook-reader/_app/immutable/chunks/tap-495987ce.js",
+  "/ebook-reader/_app/immutable/chunks/index.es-98a5a7c8.js",
+  "/ebook-reader/_app/immutable/chunks/storage-b95457f1.js"
 ];
 const files = [
   "/ebook-reader/.nojekyll",
@@ -41,12 +41,12 @@ const files = [
   "/ebook-reader/safari-pinned-tab.svg"
 ];
 const prerendered = [
-  "/ebook-reader",
   "/ebook-reader/b",
   "/ebook-reader/manage",
-  "/ebook-reader/settings"
+  "/ebook-reader/settings",
+  "/ebook-reader"
 ];
-const version = "1653574450238";
+const version = "1653777402759";
 /**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
