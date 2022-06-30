@@ -1,15 +1,15 @@
 const build = [
-  "/ebook-reader/_app/immutable/start-ce7fa126.js",
+  "/ebook-reader/_app/immutable/start-b06b1aa7.js",
   "/ebook-reader/_app/immutable/pages/__layout.svelte-70295cbc.js",
   "/ebook-reader/_app/immutable/assets/pages/__layout.svelte-27feaf16.css",
   "/ebook-reader/_app/immutable/pages/__error.svelte-44e380c6.js",
   "/ebook-reader/_app/immutable/pages/auth/index.svelte-547498f9.js",
   "/ebook-reader/_app/immutable/pages/b/_id_integer_.svelte-0019915a.js",
-  "/ebook-reader/_app/immutable/pages/b/index.svelte-9b1d77cd.js",
+  "/ebook-reader/_app/immutable/pages/b/index.svelte-74daa142.js",
   "/ebook-reader/_app/immutable/assets/pages/b/index.svelte-aa463c1e.css",
-  "/ebook-reader/_app/immutable/pages/index.svelte-11827317.js",
-  "/ebook-reader/_app/immutable/pages/manage/index.svelte-be5e94de.js",
-  "/ebook-reader/_app/immutable/pages/settings/index.svelte-266dd231.js",
+  "/ebook-reader/_app/immutable/pages/index.svelte-e113fcf8.js",
+  "/ebook-reader/_app/immutable/pages/manage/index.svelte-5e08a874.js",
+  "/ebook-reader/_app/immutable/pages/settings/index.svelte-2322ce89.js",
   "/ebook-reader/_app/immutable/chunks/index-df7a4262.js",
   "/ebook-reader/_app/immutable/chunks/index-80298860.js",
   "/ebook-reader/_app/immutable/chunks/singletons-d1fb5791.js",
@@ -18,10 +18,10 @@ const build = [
   "/ebook-reader/_app/immutable/chunks/storage-source-manager-6826c117.js",
   "/ebook-reader/_app/immutable/chunks/fa-f5baca2c.js",
   "/ebook-reader/_app/immutable/assets/fa-29562a41.css",
-  "/ebook-reader/_app/immutable/chunks/format-page-title-a92bc43a.js",
-  "/ebook-reader/_app/immutable/chunks/theme-option-e56e2f4c.js",
+  "/ebook-reader/_app/immutable/chunks/format-page-title-e664d430.js",
+  "/ebook-reader/_app/immutable/chunks/theme-option-999cbcbd.js",
   "/ebook-reader/_app/immutable/chunks/use-click-outside-599ab045.js",
-  "/ebook-reader/_app/immutable/chunks/index.es-ee948701.js",
+  "/ebook-reader/_app/immutable/chunks/index.es-8c1d8a2e.js",
   "/ebook-reader/_app/immutable/chunks/popover-2a4f0d15.js"
 ];
 const files = [
@@ -48,7 +48,7 @@ const prerendered = [
   "/ebook-reader/settings",
   "/ebook-reader"
 ];
-const version = "1656632528481";
+const version = "1656633139630";
 /**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
