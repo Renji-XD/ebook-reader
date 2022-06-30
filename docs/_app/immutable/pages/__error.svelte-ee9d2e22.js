@@ -1,1 +1,0 @@
-import{S as e,i as s,n as a}from"../chunks/index-df7a4262.js";const r=()=>({status:302,redirect:"/manage"});class l extends e{constructor(t){super(),s(this,t,null,null,a,{})}}export{l as default,r as load};
