@@ -1,0 +1,5 @@
+import{S as m,i as f,n as p,j as _,e as v,I as b,d as i,l as h,c as $,a as g,f as c,a2 as y,F as u}from"../chunks/index-df7a4262.js";import{C as d,D as x,h as H,n as I,H as q}from"../chunks/format-page-title-a92bc43a.js";import"../chunks/singletons-d1fb5791.js";import"../chunks/storage-source-manager-6826c117.js";import"../chunks/dialog-manager-7832ece7.js";/**
+ * @license BSD-3-Clause
+ * Copyright (c) 2022, ッツ Reader Authors
+ * All rights reserved.
+ */function C(n,e){const t=e.subscribe();return{destroy:()=>t.unsubscribe()}}function D(n){let e,t,s,r,l;return document.title=e=d("Home"),{c(){t=_(),s=v("div")},l(a){b('[data-svelte="svelte-1o30anf"]',document.head).forEach(i),t=h(a),s=$(a,"DIV",{}),g(s).forEach(i)},m(a,o){c(a,t,o),c(a,s,o),r||(l=y(C.call(null,s,n[0])),r=!0)},p(a,[o]){o&0&&e!==(e=d("Home"))&&(document.title=e)},i:u,o:u,d(a){a&&i(t),a&&i(s),r=!1,l()}}}function E(n){return[x.lastItem$.pipe(H(t=>t?`/b/${t.dataId}`:"manage"),I(q))]}class R extends m{constructor(e){super(),f(this,e,E,D,p,{})}}export{R as default};
