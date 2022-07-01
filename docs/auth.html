@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html class="writing-horizontal-tb h-full w-full" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"
+      name="viewport"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/ebook-reader/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="152x152" href="/ebook-reader/favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/ebook-reader/icons/regular-icon@32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/ebook-reader/icons/regular-icon@16x16.png"
+    />
+    <link rel="manifest" href="/ebook-reader/manifest.webmanifest" />
+    <meta name="theme-color" content="#37474f" />
+    <link rel="mask-icon" href="/ebook-reader/safari-pinned-tab.svg" color="#37474f" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="content-security-policy" content=""><title>ッツ Ebook Reader</title><meta name="robots" content="index,follow" data-svelte="svelte-1v2a5gq"><meta name="googlebot" content="index,follow" data-svelte="svelte-1v2a5gq"><meta name="description" content="Online e-book reader that supports Yomichan" data-svelte="svelte-1v2a5gq"><link rel="canonical" href="https://reader.ttsu.app/ebook-reader/auth" data-svelte="svelte-1v2a5gq"><meta property="og:url" content="https://reader.ttsu.app/ebook-reader/auth" data-svelte="svelte-1v2a5gq">
+
+    <meta property="og:type" content="website" data-svelte="svelte-1v2a5gq">
+      
+
+    <meta property="og:title" content="ッツ Ebook Reader" data-svelte="svelte-1v2a5gq">
+
+    <meta property="og:description" content="Online e-book reader that supports Yomichan" data-svelte="svelte-1v2a5gq">
+
+    <meta property="og:image" content="https://reader.ttsu.app/icons/regular-icon@512x512.png" data-svelte="svelte-1v2a5gq">
+        
+        <meta property="og:image:width" content="512" data-svelte="svelte-1v2a5gq">
+        <meta property="og:image:height" content="512" data-svelte="svelte-1v2a5gq">
+
+    
+
+    
+
+    
+	<link rel="stylesheet" href="/ebook-reader/_app/immutable/assets/pages/__layout.svelte-27feaf16.css">
+	<link rel="stylesheet" href="/ebook-reader/_app/immutable/assets/fa-29562a41.css">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/start-490bf318.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/index-df7a4262.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/index-80298860.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/singletons-d1fb5791.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/pages/__layout.svelte-70295cbc.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/stores-8abc4b4b.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/dialog-manager-7832ece7.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/storage-source-manager-6826c117.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/pages/auth/index.svelte-2c30bf81.js">
+	<link rel="modulepreload" href="/ebook-reader/_app/immutable/chunks/fa-f5baca2c.js">
+			<script>
+		if ('serviceWorker' in navigator) {
+			addEventListener('load', () => {
+				navigator.serviceWorker.register('/ebook-reader/service-worker.js');
+			});
+		}
+	</script>
+  </head>
+  <body class="h-full w-full break-words font-sans">
+    <div class="h-full w-full">
+
+
+
+
+
+
+<div class="fixed inset-0 flex h-full w-full items-center justify-center text-7xl"><svg id="" class="svelte-fa spin svelte-1w3t65e" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 512 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(256 256)" transform-origin="128 0"><g transform="translate(0,0) scale(1,1)"><path d="M304 48C304 74.51 282.5 96 256 96C229.5 96 208 74.51 208 48C208 21.49 229.5 0 256 0C282.5 0 304 21.49 304 48zM304 464C304 490.5 282.5 512 256 512C229.5 512 208 490.5 208 464C208 437.5 229.5 416 256 416C282.5 416 304 437.5 304 464zM0 256C0 229.5 21.49 208 48 208C74.51 208 96 229.5 96 256C96 282.5 74.51 304 48 304C21.49 304 0 282.5 0 256zM512 256C512 282.5 490.5 304 464 304C437.5 304 416 282.5 416 256C416 229.5 437.5 208 464 208C490.5 208 512 229.5 512 256zM74.98 437C56.23 418.3 56.23 387.9 74.98 369.1C93.73 350.4 124.1 350.4 142.9 369.1C161.6 387.9 161.6 418.3 142.9 437C124.1 455.8 93.73 455.8 74.98 437V437zM142.9 142.9C124.1 161.6 93.73 161.6 74.98 142.9C56.24 124.1 56.24 93.73 74.98 74.98C93.73 56.23 124.1 56.23 142.9 74.98C161.6 93.73 161.6 124.1 142.9 142.9zM369.1 369.1C387.9 350.4 418.3 350.4 437 369.1C455.8 387.9 455.8 418.3 437 437C418.3 455.8 387.9 455.8 369.1 437C350.4 418.3 350.4 387.9 369.1 369.1V369.1z" fill="currentColor" transform="translate(-256 -256)"></path></g></g></svg></div>
+
+
+
+
+		<script type="module" data-sveltekit-hydrate="cd94yo">
+		import { start } from "/ebook-reader/_app/immutable/start-490bf318.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="cd94yo"]').parentNode,
+			paths: {"base":"/ebook-reader","assets":"/ebook-reader"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 2],
+				params: {},
+				routeId: "auth"
+			}
+		});
+	</script><script type="application/json" sveltekit:data-type="props">{"data":["Eiusmod culpa eu sausage pariatur tenderloin beef.  Aute excepteur salami rump.  Cupim sirloin ut excepteur aliquip ham hock hamburger spare ribs sausage minim.  Irure exercitation salami lorem, pig shankle sed ad velit picanha porchetta fugiat ham chicken.  Ham hock landjaeger quis eiusmod, do porchetta capicola excepteur burgdoggen cillum jerky fatback in.  Andouille quis short loin excepteur dolore tempor.  Meatloaf ea do in.","Short ribs in chislic ball tip aliquip veniam, turkey hamburger filet mignon ad eiusmod.  Frankfurter occaecat meatloaf irure, meatball ullamco eu aute minim nisi venison duis fugiat veniam.  Sunt tenderloin chicken pork, turducken shank sausage picanha jowl qui consectetur tri-tip nostrud bacon.  Duis sed quis short ribs.","Meatball tempor kielbasa buffalo.  Minim irure tongue alcatra cupim sirloin quis fugiat anim ham hock.  Et anim minim irure, salami sed eiusmod adipisicing ham aute strip steak laborum ipsum ball tip dolore.  Sausage leberkas sint pork belly culpa, alcatra in nulla.  Brisket nisi rump, chuck adipisicing cupidatat pastrami incididunt eu esse.  Ribeye ut ut deserunt.  Pancetta tri-tip eu commodo tongue shank nulla chicken andouille strip steak adipisicing elit bacon in.","Elit ipsum drumstick beef pancetta meatball excepteur aute id bresaola magna pig tail rump.  Alcatra ullamco aliquip, tongue chicken tri-tip sint consequat doner aute dolore excepteur quis labore.  Chislic brisket nulla ribeye beef ribs.  Ut exercitation ball tip consectetur elit anim tongue shoulder chislic kevin id.  Beef ribs qui ground round drumstick short loin proident.  Officia sint boudin drumstick aute, pariatur adipisicing.  Est tempor labore, occaecat jowl veniam in sausage lorem.","Culpa ut esse aliqua, chicken ut minim.  Eu magna spare ribs ullamco, venison kevin ut pig nisi.  Alcatra officia commodo boudin, labore brisket short loin.  Dolor cillum cupim sint incididunt sed fugiat ipsum alcatra jowl ut short loin rump landjaeger t-bone.  Commodo in tri-tip ribeye."],"sec":"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"}</script></div>
+  </body>
+</html>

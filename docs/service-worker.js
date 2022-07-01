@@ -1,9 +1,9 @@
 const build = [
-  "/ebook-reader/_app/immutable/start-b06b1aa7.js",
+  "/ebook-reader/_app/immutable/start-490bf318.js",
   "/ebook-reader/_app/immutable/pages/__layout.svelte-70295cbc.js",
   "/ebook-reader/_app/immutable/assets/pages/__layout.svelte-27feaf16.css",
   "/ebook-reader/_app/immutable/pages/__error.svelte-44e380c6.js",
-  "/ebook-reader/_app/immutable/pages/auth/index.svelte-547498f9.js",
+  "/ebook-reader/_app/immutable/pages/auth/index.svelte-2c30bf81.js",
   "/ebook-reader/_app/immutable/pages/b/_id_integer_.svelte-0019915a.js",
   "/ebook-reader/_app/immutable/pages/b/index.svelte-74daa142.js",
   "/ebook-reader/_app/immutable/assets/pages/b/index.svelte-aa463c1e.css",
@@ -42,13 +42,15 @@ const files = [
   "/ebook-reader/safari-pinned-tab.svg"
 ];
 const prerendered = [
+  "/ebook-reader/auth",
+  "/ebook-reader/auth/__data.json",
   "/ebook-reader/b",
   "/ebook-reader/manage",
   "/ebook-reader/manage/__data.json",
   "/ebook-reader/settings",
   "/ebook-reader"
 ];
-const version = "1656633139630";
+const version = "1656636673217";
 /**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
