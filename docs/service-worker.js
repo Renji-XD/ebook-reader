@@ -1,5 +1,5 @@
 const build = [
-  "/ebook-reader/_app/immutable/start-c8eb5b83.js",
+  "/ebook-reader/_app/immutable/start-217db130.js",
   "/ebook-reader/_app/immutable/pages/__layout.svelte-70295cbc.js",
   "/ebook-reader/_app/immutable/assets/pages/__layout.svelte-27feaf16.css",
   "/ebook-reader/_app/immutable/pages/__error.svelte-44e380c6.js",
@@ -42,13 +42,13 @@ const files = [
   "/ebook-reader/safari-pinned-tab.svg"
 ];
 const prerendered = [
-  "/ebook-reader/auth",
   "/ebook-reader/b",
   "/ebook-reader/manage",
+  "/ebook-reader/manage/__data.json",
   "/ebook-reader/settings",
   "/ebook-reader"
 ];
-const version = "1656637096981";
+const version = "1656637407240";
 /**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
