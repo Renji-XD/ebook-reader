@@ -29,10 +29,10 @@ You can find most of the reader controls in the reader header which you can open
 | ------------------------------------------------ | ------------------------------------------------------------------------------- |
 | ![Icon](assets/readme/control-toc.svg)           | Opens the table of content if available                                         |
 | ![Icon](assets/readme/control-bookmark.svg)      | Allows you to create a bookmark at your current location (keybind <kbd>b</kbd>) |
-| ![Image](assets/readme/book-speed.png)           | Displays current auto scroll speed (keybind <kbd>a</kbd>/<kbd>d</kbd>)          |
+| ![Image](assets/readme/book-scroll-speed.png)    | Displays current auto scroll speed (keybind <kbd>a</kbd>/<kbd>d</kbd>)          |
 | ![Icon](assets/readme/control-fullscreen.svg)    | Allows you to enter fullscreen mode (keybind <kbd>F11</kbd>)                    |
 | ![Icon](assets/readme/control-settings.svg)      | Navigates you to the settings                                                   |
-| ![Icon](assets/readme/control-manager.svg)       | Navigates you to the book manager                                               |
+| ![Icon](assets/readme/control-manager.svg)       | Navigates you to the book manager or opens the action menu                      |
 | ![Icon](assets/readme/control-bookmark-icon.svg) | Displayed at the current bookmark location                                      |
 | ![Image](assets/readme/book-progress.png)        | Displays your reading progress, click/tap on it to hide                         |
 
@@ -79,6 +79,7 @@ You may find the following controls in the manager:
 | ![Icon](assets/readme/control-folder-upload.svg) | Allows you to import new books from a folder to the library (desktop only) |
 | ![Icon](assets/readme/control-settings.svg)      | Navigates you to the settings                                              |
 | ![Icon](assets/readme/control-log.svg)           | Allows you to download data for a bug report                               |
+| ![Icon](assets/readme/control-manager.svg)       | Opens the action menu                                                      |
 
 # Self Host
 
