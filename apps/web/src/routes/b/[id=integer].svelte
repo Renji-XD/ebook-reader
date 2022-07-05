@@ -4,6 +4,6 @@
 
   export const load: Load = ({ params }) => ({
     status: 302,
-    redirect: `/ebook-reader/b?${toSearchParams(params)}`
+    redirect: `/b?${toSearchParams(params)}`
   });
 </script>

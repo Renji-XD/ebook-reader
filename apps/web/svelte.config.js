@@ -21,11 +21,8 @@ const config = {
       pages: 'docs',
       assets: 'docs'
     }),
-    paths: {
-      base: '/ebook-reader'
-    },
     prerender: {
-      default: true
+      default: false
     },
     vite: {
       ssr: {
