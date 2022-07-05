@@ -1,4 +1,4 @@
-import{S as o,i as r,n as s}from"../../chunks/index-df7a4262.js";/**
+import{S as o,i as r,n as s}from"../../chunks/index-91a5e740.js";/**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
  * All rights reserved.

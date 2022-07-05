@@ -1,28 +1,36 @@
+/**
+ * @license BSD-3-Clause
+ * Copyright (c) 2022, ッツ Reader Authors
+ * All rights reserved.
+ */
+function toSearchParams(params) {
+  return Object.entries(params).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join("&");
+}
 const build = [
-  "/ebook-reader/_app/immutable/start-217db130.js",
-  "/ebook-reader/_app/immutable/pages/__layout.svelte-70295cbc.js",
-  "/ebook-reader/_app/immutable/assets/pages/__layout.svelte-27feaf16.css",
-  "/ebook-reader/_app/immutable/pages/__error.svelte-44e380c6.js",
-  "/ebook-reader/_app/immutable/pages/auth/index.svelte-547498f9.js",
-  "/ebook-reader/_app/immutable/pages/b/_id_integer_.svelte-0019915a.js",
-  "/ebook-reader/_app/immutable/pages/b/index.svelte-74daa142.js",
+  "/ebook-reader/_app/immutable/start-7062243b.js",
+  "/ebook-reader/_app/immutable/pages/__layout.svelte-93bc80cc.js",
+  "/ebook-reader/_app/immutable/assets/pages/__layout.svelte-3a7dbc11.css",
+  "/ebook-reader/_app/immutable/pages/__error.svelte-cc011de0.js",
+  "/ebook-reader/_app/immutable/pages/b/_id_integer_.svelte-59591826.js",
+  "/ebook-reader/_app/immutable/pages/b/index.svelte-a70ef235.js",
   "/ebook-reader/_app/immutable/assets/pages/b/index.svelte-aa463c1e.css",
-  "/ebook-reader/_app/immutable/pages/index.svelte-e113fcf8.js",
-  "/ebook-reader/_app/immutable/pages/manage/index.svelte-5e08a874.js",
-  "/ebook-reader/_app/immutable/pages/settings/index.svelte-2322ce89.js",
-  "/ebook-reader/_app/immutable/chunks/index-df7a4262.js",
-  "/ebook-reader/_app/immutable/chunks/index-80298860.js",
+  "/ebook-reader/_app/immutable/pages/index.svelte-07bea970.js",
+  "/ebook-reader/_app/immutable/pages/manage/index.svelte-bae66927.js",
+  "/ebook-reader/_app/immutable/pages/settings/index.svelte-cf17e11b.js",
+  "/ebook-reader/_app/immutable/chunks/index-91a5e740.js",
+  "/ebook-reader/_app/immutable/chunks/index-dccf800c.js",
   "/ebook-reader/_app/immutable/chunks/singletons-d1fb5791.js",
-  "/ebook-reader/_app/immutable/chunks/stores-8abc4b4b.js",
-  "/ebook-reader/_app/immutable/chunks/dialog-manager-7832ece7.js",
-  "/ebook-reader/_app/immutable/chunks/storage-source-manager-6826c117.js",
-  "/ebook-reader/_app/immutable/chunks/fa-f5baca2c.js",
-  "/ebook-reader/_app/immutable/assets/fa-29562a41.css",
-  "/ebook-reader/_app/immutable/chunks/format-page-title-e664d430.js",
-  "/ebook-reader/_app/immutable/chunks/theme-option-999cbcbd.js",
-  "/ebook-reader/_app/immutable/chunks/use-click-outside-599ab045.js",
-  "/ebook-reader/_app/immutable/chunks/index.es-8c1d8a2e.js",
-  "/ebook-reader/_app/immutable/chunks/popover-2a4f0d15.js"
+  "/ebook-reader/_app/immutable/chunks/stores-c16cb913.js",
+  "/ebook-reader/_app/immutable/chunks/dialog-manager-2d1393e2.js",
+  "/ebook-reader/_app/immutable/chunks/utils-48991f97.js",
+  "/ebook-reader/_app/immutable/chunks/store-afb7c6c1.js",
+  "/ebook-reader/_app/immutable/chunks/merged-header-icon-fca71072.js",
+  "/ebook-reader/_app/immutable/assets/merged-header-icon-63544cfc.css",
+  "/ebook-reader/_app/immutable/chunks/format-page-title-d2ff14dd.js",
+  "/ebook-reader/_app/immutable/chunks/theme-option-c3fe1088.js",
+  "/ebook-reader/_app/immutable/chunks/tap-495987ce.js",
+  "/ebook-reader/_app/immutable/chunks/index.es-98a5a7c8.js",
+  "/ebook-reader/_app/immutable/chunks/storage-d5018154.js"
 ];
 const files = [
   "/ebook-reader/.nojekyll",
@@ -44,19 +52,10 @@ const files = [
 const prerendered = [
   "/ebook-reader/b",
   "/ebook-reader/manage",
-  "/ebook-reader/manage/__data.json",
   "/ebook-reader/settings",
   "/ebook-reader"
 ];
-const version = "1656637407240";
-/**
- * @license BSD-3-Clause
- * Copyright (c) 2022, ッツ Reader Authors
- * All rights reserved.
- */
-function toSearchParams(params) {
-  return Object.entries(params).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join("&");
-}
+const version = "1656982813400";
 const worker = self;
 const BUILD_CACHE_NAME = `build:${version}`;
 const prerenderedSet = new Set(prerendered);
@@ -84,7 +83,8 @@ worker.addEventListener("fetch", (event) => {
   if (!isHttp || isDevServerRequest || skipBecauseUncached)
     return;
   if (isSelfHost && prerenderedSet.has(url.pathname)) {
-    event.respondWith(networkFirstRaceCache(event.request, BUILD_CACHE_NAME));
+    const requestWithoutParams = new Request(url.pathname);
+    event.respondWith(networkFirstRaceCache(event.request, false, BUILD_CACHE_NAME, requestWithoutParams));
     return;
   }
   if (isSelfHost) {
@@ -98,19 +98,22 @@ worker.addEventListener("fetch", (event) => {
     event.respondWith(networkFirstRaceCache(event.request));
   }
 });
-async function networkFirstRaceCache(request, fallbackCacheName) {
+async function networkFirstRaceCache(request, storeResponse = true, fallbackCacheName, fallbackCacheRequest) {
   const cache = await caches.open(`other:${version}`);
   const controller = new AbortController();
   let cachedResponse;
   let done = false;
   let attempted = false;
+  const retrieveFromFallbackCache = () => fallbackCacheName ? caches.match(fallbackCacheRequest != null ? fallbackCacheRequest : request, { cacheName: fallbackCacheName }) : void 0;
   const retrieveFromCache = async () => {
+    if (!storeResponse)
+      return retrieveFromFallbackCache();
     const response = await cache.match(request);
     if (response)
       return response;
     if (!fallbackCacheName)
       return void 0;
-    return caches.match(request, { cacheName: fallbackCacheName });
+    return retrieveFromFallbackCache();
   };
   try {
     const handle = setTimeout(async () => {
@@ -123,7 +126,9 @@ async function networkFirstRaceCache(request, fallbackCacheName) {
     const response = await fetch(request, { signal: controller.signal });
     done = true;
     clearTimeout(handle);
-    cache.put(request, response.clone());
+    if (storeResponse) {
+      cache.put(request, response.clone());
+    }
     return response;
   } catch (err) {
     if (!attempted) {
