@@ -7,8 +7,8 @@ function toSearchParams(params) {
   return Object.entries(params).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join("&");
 }
 const build = [
-  "/_app/immutable/start-731e9f97.js",
-  "/_app/immutable/pages/__layout.svelte-4a522428.js",
+  "/_app/immutable/start-411483cb.js",
+  "/_app/immutable/pages/__layout.svelte-53707b88.js",
   "/_app/immutable/assets/pages/__layout.svelte-3a7dbc11.css",
   "/_app/immutable/pages/__error.svelte-8829d64b.js",
   "/_app/immutable/pages/b/_id_integer_.svelte-ea82f39f.js",
@@ -55,7 +55,7 @@ const prerendered = [
   "/manage",
   "/settings"
 ];
-const version = "1656983836699";
+const version = "1656983976657";
 const worker = self;
 const BUILD_CACHE_NAME = `build:${version}`;
 const prerenderedSet = new Set(prerendered);
