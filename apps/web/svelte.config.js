@@ -22,7 +22,7 @@ const config = {
       assets: 'docs'
     }),
     prerender: {
-      default: false
+      default: true
     },
     vite: {
       ssr: {
