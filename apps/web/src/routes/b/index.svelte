@@ -93,7 +93,7 @@
   const leaveIfBookMissing$ = rawBookData$.pipe(
     tap((data) => {
       if (!data) {
-        goto('/manage');
+        goto('/ebook-reader/manage');
       }
     }),
     reduceToEmptyString()

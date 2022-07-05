@@ -34,7 +34,7 @@
     storage.persisted().then(setPersistentStorage);
   });
 
-  let prevPage = '/manage';
+  let prevPage = '/ebook-reader/manage';
   afterNavigate((navigation) => {
     const { from } = navigation;
     if (!from) return;

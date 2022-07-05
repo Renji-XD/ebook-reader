@@ -166,7 +166,7 @@
   }
 
   async function gotoBook(id: number) {
-    await goto(`/b?id=${id}`);
+    await goto(`/ebook-reader/b?id=${id}`);
   }
 
   function onBugReportClick() {

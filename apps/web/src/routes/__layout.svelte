@@ -22,10 +22,6 @@
   }
 </script>
 
-<svelte:head>
-  <base href="https://renji-xd.github.io/ebook-reader/" />
-</svelte:head>
-
 <MetaTags
   title="ッツ Ebook Reader"
   description="Online e-book reader that supports Yomichan"

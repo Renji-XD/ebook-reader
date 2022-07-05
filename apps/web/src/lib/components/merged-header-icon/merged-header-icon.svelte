@@ -29,7 +29,7 @@
     const action = actionItems.find((item) => item.label === target);
 
     if (action?.routeId) {
-      goto(`/${action.routeId}`);
+      goto(`/ebook-reader/${action.routeId}`);
     }
   }
 
