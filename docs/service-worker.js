@@ -7,7 +7,7 @@ function toSearchParams(params) {
   return Object.entries(params).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join("&");
 }
 const build = [
-  "/_app/immutable/start-b573ab8c.js",
+  "/_app/immutable/start-5e1eecce.js",
   "/_app/immutable/pages/__layout.svelte-4a522428.js",
   "/_app/immutable/assets/pages/__layout.svelte-3a7dbc11.css",
   "/_app/immutable/pages/__error.svelte-8829d64b.js",
@@ -50,7 +50,7 @@ const files = [
   "/safari-pinned-tab.svg"
 ];
 const prerendered = [];
-const version = "1656984134232";
+const version = "1656984184423";
 const worker = self;
 const BUILD_CACHE_NAME = `build:${version}`;
 const prerenderedSet = new Set(prerendered);
