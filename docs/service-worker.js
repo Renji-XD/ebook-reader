@@ -7,7 +7,7 @@ function toSearchParams(params) {
   return Object.entries(params).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join("&");
 }
 const build = [
-  "/ebook-reader/_app/immutable/start-f82ddcb8.js",
+  "/ebook-reader/_app/immutable/start-e868ccf9.js",
   "/ebook-reader/_app/immutable/pages/__layout.svelte-93bc80cc.js",
   "/ebook-reader/_app/immutable/assets/pages/__layout.svelte-3a7dbc11.css",
   "/ebook-reader/_app/immutable/pages/__error.svelte-cc011de0.js",
@@ -15,7 +15,7 @@ const build = [
   "/ebook-reader/_app/immutable/pages/b/index.svelte-b359597f.js",
   "/ebook-reader/_app/immutable/assets/pages/b/index.svelte-aa463c1e.css",
   "/ebook-reader/_app/immutable/pages/index.svelte-07bea970.js",
-  "/ebook-reader/_app/immutable/pages/manage/index.svelte-a172f1b0.js",
+  "/ebook-reader/_app/immutable/pages/manage/index.svelte-63ffda9f.js",
   "/ebook-reader/_app/immutable/pages/settings/index.svelte-d6d035b7.js",
   "/ebook-reader/_app/immutable/chunks/index-91a5e740.js",
   "/ebook-reader/_app/immutable/chunks/index-dccf800c.js",
@@ -55,7 +55,7 @@ const prerendered = [
   "/ebook-reader/settings",
   "/ebook-reader"
 ];
-const version = "1656987078816";
+const version = "1657109226244";
 const worker = self;
 const BUILD_CACHE_NAME = `build:${version}`;
 const prerenderedSet = new Set(prerendered);
