@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "svelte-kit dev",
+    "dev-host": "svelte-kit dev --host",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
@@ -11,7 +12,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "1.0.0-next.34",
-    "@sveltejs/kit": "1.0.0-next.357",
+    "@sveltejs/kit": "1.0.0-next.358",
     "@tailwindcss/aspect-ratio": "0.4.0",
     "@tailwindcss/forms": "0.5.2",
     "@tailwindcss/line-clamp": "0.4.0",
