@@ -7,30 +7,30 @@ function toSearchParams(params) {
   return Object.entries(params).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join("&");
 }
 const build = [
-  "/ebook-reader/_app/immutable/start-f5cbfaf4.js",
-  "/ebook-reader/_app/immutable/pages/__layout.svelte-93bc80cc.js",
-  "/ebook-reader/_app/immutable/assets/pages/__layout.svelte-3a7dbc11.css",
-  "/ebook-reader/_app/immutable/pages/__error.svelte-cc011de0.js",
-  "/ebook-reader/_app/immutable/pages/b/_id_integer_.svelte-59591826.js",
-  "/ebook-reader/_app/immutable/pages/b/index.svelte-dc951830.js",
+  "/ebook-reader/_app/immutable/start-5dfbc01d.js",
+  "/ebook-reader/_app/immutable/pages/__layout.svelte-dc68ce18.js",
+  "/ebook-reader/_app/immutable/assets/pages/__layout.svelte-38fec22e.css",
+  "/ebook-reader/_app/immutable/pages/__error.svelte-4e1e30e7.js",
+  "/ebook-reader/_app/immutable/pages/b/_id_integer_.svelte-12e49af1.js",
+  "/ebook-reader/_app/immutable/pages/b/index.svelte-c22e3b6a.js",
   "/ebook-reader/_app/immutable/assets/pages/b/index.svelte-aa463c1e.css",
-  "/ebook-reader/_app/immutable/pages/index.svelte-07bea970.js",
-  "/ebook-reader/_app/immutable/pages/manage/index.svelte-63ffda9f.js",
-  "/ebook-reader/_app/immutable/pages/settings/index.svelte-d6d035b7.js",
-  "/ebook-reader/_app/immutable/chunks/index-91a5e740.js",
-  "/ebook-reader/_app/immutable/chunks/index-dccf800c.js",
+  "/ebook-reader/_app/immutable/pages/index.svelte-76c7e9ea.js",
+  "/ebook-reader/_app/immutable/pages/manage/index.svelte-79ce73cc.js",
+  "/ebook-reader/_app/immutable/pages/settings/index.svelte-2912246a.js",
+  "/ebook-reader/_app/immutable/chunks/index-419c7528.js",
+  "/ebook-reader/_app/immutable/chunks/index-4e115a27.js",
   "/ebook-reader/_app/immutable/chunks/singletons-d1fb5791.js",
-  "/ebook-reader/_app/immutable/chunks/stores-c16cb913.js",
+  "/ebook-reader/_app/immutable/chunks/stores-8f7b0440.js",
   "/ebook-reader/_app/immutable/chunks/dialog-manager-2d1393e2.js",
   "/ebook-reader/_app/immutable/chunks/utils-48991f97.js",
   "/ebook-reader/_app/immutable/chunks/store-afb7c6c1.js",
-  "/ebook-reader/_app/immutable/chunks/merged-header-icon-eb22e290.js",
+  "/ebook-reader/_app/immutable/chunks/merged-header-icon-fb3ecdf1.js",
   "/ebook-reader/_app/immutable/assets/merged-header-icon-63544cfc.css",
   "/ebook-reader/_app/immutable/chunks/format-page-title-d2ff14dd.js",
   "/ebook-reader/_app/immutable/chunks/theme-option-c3fe1088.js",
   "/ebook-reader/_app/immutable/chunks/tap-495987ce.js",
   "/ebook-reader/_app/immutable/chunks/index.es-98a5a7c8.js",
-  "/ebook-reader/_app/immutable/chunks/storage-294dab94.js"
+  "/ebook-reader/_app/immutable/chunks/storage-3106b170.js"
 ];
 const files = [
   "/ebook-reader/.nojekyll",
@@ -55,7 +55,7 @@ const prerendered = [
   "/ebook-reader/settings",
   "/ebook-reader"
 ];
-const version = "1657111919811";
+const version = "1657541158420";
 const worker = self;
 const BUILD_CACHE_NAME = `build:${version}`;
 const prerenderedSet = new Set(prerendered);
