@@ -3,36 +3,33 @@
  * Copyright (c) 2022, ッツ Reader Authors
  * All rights reserved.
  */
-function toSearchParams(params) {
-  return Object.entries(params).map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`).join("&");
+function _(e) {
+  return Object.entries(e).map(([a, r]) => `${encodeURIComponent(a)}=${encodeURIComponent(r)}`).join("&");
 }
-const build = [
-  "/ebook-reader/_app/immutable/start-5dfbc01d.js",
-  "/ebook-reader/_app/immutable/pages/__layout.svelte-dc68ce18.js",
-  "/ebook-reader/_app/immutable/assets/pages/__layout.svelte-38fec22e.css",
-  "/ebook-reader/_app/immutable/pages/__error.svelte-4e1e30e7.js",
-  "/ebook-reader/_app/immutable/pages/b/_id_integer_.svelte-12e49af1.js",
-  "/ebook-reader/_app/immutable/pages/b/index.svelte-c22e3b6a.js",
-  "/ebook-reader/_app/immutable/assets/pages/b/index.svelte-aa463c1e.css",
-  "/ebook-reader/_app/immutable/pages/index.svelte-76c7e9ea.js",
-  "/ebook-reader/_app/immutable/pages/manage/index.svelte-79ce73cc.js",
-  "/ebook-reader/_app/immutable/pages/settings/index.svelte-2912246a.js",
-  "/ebook-reader/_app/immutable/chunks/index-419c7528.js",
-  "/ebook-reader/_app/immutable/chunks/index-4e115a27.js",
-  "/ebook-reader/_app/immutable/chunks/singletons-d1fb5791.js",
-  "/ebook-reader/_app/immutable/chunks/stores-8f7b0440.js",
-  "/ebook-reader/_app/immutable/chunks/dialog-manager-2d1393e2.js",
-  "/ebook-reader/_app/immutable/chunks/utils-48991f97.js",
-  "/ebook-reader/_app/immutable/chunks/store-afb7c6c1.js",
-  "/ebook-reader/_app/immutable/chunks/merged-header-icon-fb3ecdf1.js",
-  "/ebook-reader/_app/immutable/assets/merged-header-icon-63544cfc.css",
-  "/ebook-reader/_app/immutable/chunks/format-page-title-d2ff14dd.js",
-  "/ebook-reader/_app/immutable/chunks/theme-option-c3fe1088.js",
-  "/ebook-reader/_app/immutable/chunks/tap-495987ce.js",
-  "/ebook-reader/_app/immutable/chunks/index.es-98a5a7c8.js",
-  "/ebook-reader/_app/immutable/chunks/storage-3106b170.js"
-];
-const files = [
+const j = [
+  "/ebook-reader/_app/immutable/start-90deda10.js",
+  "/ebook-reader/_app/immutable/pages/__layout.svelte-483d6cc9.js",
+  "/ebook-reader/_app/immutable/assets/__layout-d2329f45.css",
+  "/ebook-reader/_app/immutable/pages/__error.svelte-01ee862f.js",
+  "/ebook-reader/_app/immutable/pages/b/_id_integer_.svelte-db722f80.js",
+  "/ebook-reader/_app/immutable/pages/b/index.svelte-9955dcb7.js",
+  "/ebook-reader/_app/immutable/assets/index-51df7492.css",
+  "/ebook-reader/_app/immutable/pages/index.svelte-c65051ba.js",
+  "/ebook-reader/_app/immutable/pages/manage/index.svelte-b9c03300.js",
+  "/ebook-reader/_app/immutable/pages/settings/index.svelte-804de89f.js",
+  "/ebook-reader/_app/immutable/chunks/index-3b353f70.js",
+  "/ebook-reader/_app/immutable/chunks/index-cf958a56.js",
+  "/ebook-reader/_app/immutable/chunks/singletons-a14e46a6.js",
+  "/ebook-reader/_app/immutable/chunks/stores-fd80d0b6.js",
+  "/ebook-reader/_app/immutable/chunks/dialog-manager-b382bc32.js",
+  "/ebook-reader/_app/immutable/chunks/utils-e1cc7b00.js",
+  "/ebook-reader/_app/immutable/chunks/format-page-title-45aa809e.js",
+  "/ebook-reader/_app/immutable/chunks/theme-option-20bb7f00.js",
+  "/ebook-reader/_app/immutable/chunks/merged-header-icon-79ae4f7f.js",
+  "/ebook-reader/_app/immutable/assets/merged-header-icon-32503cb2.css",
+  "/ebook-reader/_app/immutable/chunks/index.es-d3712321.js",
+  "/ebook-reader/_app/immutable/chunks/storage-79cb84a6.js"
+], x = [
   "/ebook-reader/.nojekyll",
   "/ebook-reader/apple-touch-icon.png",
   "/ebook-reader/favicon.ico",
@@ -48,111 +45,74 @@ const files = [
   "/ebook-reader/icons/regular-icon@512x512.png",
   "/ebook-reader/manifest.webmanifest",
   "/ebook-reader/safari-pinned-tab.svg"
-];
-const prerendered = [
+], k = [
   "/ebook-reader/b",
   "/ebook-reader/manage",
   "/ebook-reader/settings",
   "/ebook-reader"
-];
-const version = "1657541158420";
-const worker = self;
-const BUILD_CACHE_NAME = `build:${version}`;
-const prerenderedSet = new Set(prerendered);
-const assetsToCache = build.concat(files).concat(prerendered);
-const cachedAssets = new Set(assetsToCache);
-worker.addEventListener("install", (event) => {
-  worker.skipWaiting();
-  event.waitUntil(caches.open(BUILD_CACHE_NAME).then((cache) => cache.addAll(assetsToCache)));
+], g = "1658921116778", n = self, b = `build:${g}`, w = new Set(k), f = j.concat(x).concat(k), v = new Set(f);
+n.addEventListener("install", (e) => {
+  n.skipWaiting(), e.waitUntil(caches.open(b).then((a) => a.addAll(f)));
 });
-worker.addEventListener("activate", (event) => {
-  event.waitUntil(caches.keys().then((keys) => {
-    const keysWithOldCache = keys.filter((key) => key !== BUILD_CACHE_NAME);
-    return Promise.all(keysWithOldCache.map((key) => caches.delete(key)));
+n.addEventListener("activate", (e) => {
+  e.waitUntil(caches.keys().then((a) => {
+    const r = a.filter((o) => o !== b);
+    return Promise.all(r.map((o) => caches.delete(o)));
   }));
 });
-worker.addEventListener("fetch", (event) => {
-  if (event.request.method !== "GET" || event.request.headers.has("range"))
+n.addEventListener("fetch", (e) => {
+  if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const url = new URL(event.request.url);
-  const isHttp = url.protocol.startsWith("http");
-  const isDevServerRequest = url.hostname === worker.location.hostname && url.port !== worker.location.port;
-  const isSelfHost = url.host === worker.location.host;
-  const isBuildAsset = isSelfHost && cachedAssets.has(url.pathname);
-  const skipBecauseUncached = event.request.cache === "only-if-cached" && !isBuildAsset;
-  if (!isHttp || isDevServerRequest || skipBecauseUncached)
-    return;
-  if (isSelfHost && prerenderedSet.has(url.pathname)) {
-    const requestWithoutParams = new Request(url.pathname);
-    event.respondWith(networkFirstRaceCache(event.request, false, BUILD_CACHE_NAME, requestWithoutParams));
-    return;
-  }
-  if (isSelfHost) {
-    const response = isBuildAsset ? caches.match(url.pathname).then((r) => r != null ? r : fetch(event.request)) : selfHostParameterizedUrlResponse(event.request);
-    if (response) {
-      event.respondWith(response);
+  const a = new URL(e.request.url), r = a.protocol.startsWith("http"), o = a.hostname === n.location.hostname && a.port !== n.location.port, i = a.host === n.location.host, p = i && v.has(a.pathname), t = e.request.cache === "only-if-cached" && !p;
+  if (!(!r || o || t)) {
+    if (i && w.has(a.pathname)) {
+      const s = new Request(a.pathname);
+      e.respondWith(h(e.request, !1, b, s));
       return;
     }
-  }
-  if (url.host === "fonts.googleapis.com") {
-    event.respondWith(networkFirstRaceCache(event.request));
+    if (i) {
+      const s = p ? caches.match(a.pathname).then((c) => c != null ? c : fetch(e.request)) : y(e.request);
+      if (s) {
+        e.respondWith(s);
+        return;
+      }
+    }
+    a.host === "fonts.googleapis.com" && e.respondWith(h(e.request));
   }
 });
-async function networkFirstRaceCache(request, storeResponse = true, fallbackCacheName, fallbackCacheRequest) {
-  const cache = await caches.open(`other:${version}`);
-  const controller = new AbortController();
-  let cachedResponse;
-  let done = false;
-  let attempted = false;
-  const retrieveFromFallbackCache = () => fallbackCacheName ? caches.match(fallbackCacheRequest != null ? fallbackCacheRequest : request, { cacheName: fallbackCacheName }) : void 0;
-  const retrieveFromCache = async () => {
-    if (!storeResponse)
-      return retrieveFromFallbackCache();
-    const response = await cache.match(request);
-    if (response)
-      return response;
-    if (!fallbackCacheName)
-      return void 0;
-    return retrieveFromFallbackCache();
+async function h(e, a = !0, r, o) {
+  const i = await caches.open(`other:${g}`), p = new AbortController();
+  let t, s = !1, c = !1;
+  const u = () => r ? caches.match(o != null ? o : e, { cacheName: r }) : void 0, l = async () => {
+    if (!a)
+      return u();
+    const d = await i.match(e);
+    if (d)
+      return d;
+    if (!!r)
+      return u();
   };
   try {
-    const handle = setTimeout(async () => {
-      cachedResponse = await retrieveFromCache();
-      attempted = true;
-      if (!cachedResponse || done)
-        return;
-      controller.abort();
-    }, 1e3);
-    const response = await fetch(request, { signal: controller.signal });
-    done = true;
-    clearTimeout(handle);
-    if (storeResponse) {
-      cache.put(request, response.clone());
-    }
-    return response;
-  } catch (err) {
-    if (!attempted) {
-      cachedResponse = await retrieveFromCache();
-    }
-    if (cachedResponse)
-      return cachedResponse;
-    throw err;
+    const d = setTimeout(async () => {
+      t = await l(), c = !0, !(!t || s) && p.abort();
+    }, 1e3), m = await fetch(e, { signal: p.signal });
+    return s = !0, clearTimeout(d), a && i.put(e, m.clone()), m;
+  } catch (d) {
+    if (c || (t = await l()), t)
+      return t;
+    throw d;
   }
 }
-function selfHostParameterizedUrlResponse(request) {
-  const url = new URL(request.url);
-  const readerRegex = /\/b\/(?<id>\d+)\/?(\?|$)/;
-  const readerRegexResult = readerRegex.exec(url.pathname);
-  if (readerRegexResult == null ? void 0 : readerRegexResult.groups) {
-    return createRedirectResponse(`/b?${toSearchParams(readerRegexResult.groups)}`);
-  }
-  return void 0;
+function y(e) {
+  const a = new URL(e.url), o = /\/b\/(?<id>\d+)\/?(\?|$)/.exec(a.pathname);
+  if (o != null && o.groups)
+    return U(`/b?${_(o.groups)}`);
 }
-function createRedirectResponse(location) {
+function U(e) {
   return new Response(null, {
     status: 302,
     headers: {
-      location
+      location: e
     }
   });
 }
