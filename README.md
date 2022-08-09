@@ -60,7 +60,7 @@ Explanation from [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Keyboard
 
 You can open the book manager by clicking/tapping on the respective icon in the reader.
 You will be presented with a list of covers for all the imported books with their respective titles and progress (determined
-by bookmark location).
+by bookmark location). Books are sorted in following priority: last opened/read > last modified/added > no time data stored.
 
 You may:
 
@@ -94,22 +94,6 @@ Therefore your data can be lost based on the amount you stored and how much stor
 will try to request for persistant storage during data insertion. Based on your browser you will
 see different behavior. E. g. firefox will ask you for your confirmation while chrome will not display any dialog but automatically grant the permissions if you frequently interacted with / bookmarked the page and / or have granted notification permissions to the site.
 You can see the current status of persistant storage in the reader settings.
-
-**Note**: Other browsers may have additional criteria for data eviction which are not affected by this setting. E. g. iOS > 13.3 may delete all your page data if you haven't interacted with the reader for 7 days etc.
-
-For more Information and Details check out this [Documentation](https://web.dev/storage-for-the-web/#how-much)
-
-# Storage Limits
-
-Data like books or bookmarks will be stored locally in your browser storage. Browsers typically apply certain limits on how much a website
-can store on your computer. Those limits are different across different browsers and options you may have enabled.
-
-> When the available disk space is filled up, the quota manager will start clearing out data based on an LRU policy — the least recently used origin will be
-> deleted first, then the next one, until the browser is no longer over the limit.
-
-Therefore your data can be lost based on the amount you stored and how much storage is available. In order to overcome this limitation ttu reader
-will try to request for persistant storage during data insertion. You can enable persistant storage in the reader settings. Based on your browser you will
-see different behavior. E. g. firefox will ask you for your confirmation while chrome will not display any dialog but automatically grant the permissions if you frequently interacted with / bookmarked the page and / or have granted notification permissions to the site
 
 **Note**: Other browsers may have additional criteria for data eviction which are not affected by this setting. E. g. iOS > 13.3 may delete all your page data if you haven't interacted with the reader for 7 days etc.
 
