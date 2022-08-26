@@ -12,4 +12,4 @@ var T=function(e,r){return T=Object.setPrototypeOf||{__proto__:[]}instanceof Arr
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
  * All rights reserved.
- */const nt=et([]),ct={dialogs$:nt};export{tt as B,B as O,x as S,E as _,g as a,m as b,I as c,ct as d,X as e,G as f,R as g,st as h,y as i,it as j,j as k,b as l,ot as m,F as n,Q as o,ut as p,C as q,W as r,at as s,et as w};
+ */const nt=et([]),ct={dialogs$:nt};export{tt as B,B as O,x as S,E as _,g as a,m as b,X as c,ct as d,G as e,R as f,I as g,st as h,y as i,it as j,j as k,b as l,ot as m,F as n,Q as o,ut as p,C as q,W as r,at as s,et as w};

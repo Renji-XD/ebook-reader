@@ -1,4 +1,4 @@
-import{w as i}from"./dialog-manager-b382bc32.js";/**
+import{w as i}from"./dialog-manager-cce8b3b0.js";/**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
  * All rights reserved.
