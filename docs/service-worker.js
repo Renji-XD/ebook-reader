@@ -7,27 +7,27 @@ function _(e) {
   return Object.entries(e).map(([a, r]) => `${encodeURIComponent(a)}=${encodeURIComponent(r)}`).join("&");
 }
 const j = [
-  "/ebook-reader/_app/immutable/start-16dbfab6.js",
+  "/ebook-reader/_app/immutable/start-3891e8ba.js",
   "/ebook-reader/_app/immutable/pages/__layout.svelte-1ec64d48.js",
   "/ebook-reader/_app/immutable/assets/__layout-7dc72dc4.css",
   "/ebook-reader/_app/immutable/pages/__error.svelte-7f42a0b4.js",
   "/ebook-reader/_app/immutable/pages/b/_id_integer_.svelte-706dcdbf.js",
-  "/ebook-reader/_app/immutable/pages/b/index.svelte-a4c1d4da.js",
+  "/ebook-reader/_app/immutable/pages/b/index.svelte-9d44db46.js",
   "/ebook-reader/_app/immutable/assets/index-a673c84c.css",
-  "/ebook-reader/_app/immutable/pages/index.svelte-77498a05.js",
-  "/ebook-reader/_app/immutable/pages/manage/index.svelte-f72e1e91.js",
-  "/ebook-reader/_app/immutable/pages/settings/index.svelte-ce98d15f.js",
+  "/ebook-reader/_app/immutable/pages/index.svelte-3d6a0b2f.js",
+  "/ebook-reader/_app/immutable/pages/manage/index.svelte-a6ec6e58.js",
+  "/ebook-reader/_app/immutable/pages/settings/index.svelte-c5bccc9b.js",
   "/ebook-reader/_app/immutable/chunks/index-df0cdd8f.js",
   "/ebook-reader/_app/immutable/chunks/index-31b77272.js",
   "/ebook-reader/_app/immutable/chunks/singletons-a14e46a6.js",
   "/ebook-reader/_app/immutable/chunks/stores-b20e80ef.js",
   "/ebook-reader/_app/immutable/chunks/dialog-manager-cce8b3b0.js",
   "/ebook-reader/_app/immutable/chunks/utils-f9d0cd9e.js",
-  "/ebook-reader/_app/immutable/chunks/format-page-title-bcdbc7b8.js",
-  "/ebook-reader/_app/immutable/chunks/theme-option-2800d09e.js",
-  "/ebook-reader/_app/immutable/chunks/merged-header-icon-196d0b6a.js",
+  "/ebook-reader/_app/immutable/chunks/format-page-title-36cd2a0a.js",
+  "/ebook-reader/_app/immutable/chunks/theme-option-f666c2ca.js",
+  "/ebook-reader/_app/immutable/chunks/merged-header-icon-197d1b73.js",
   "/ebook-reader/_app/immutable/assets/merged-header-icon-32503cb2.css",
-  "/ebook-reader/_app/immutable/chunks/index.es-d894efac.js"
+  "/ebook-reader/_app/immutable/chunks/index.es-d81d3801.js"
 ], x = [
   "/ebook-reader/.nojekyll",
   "/ebook-reader/apple-touch-icon.png",
@@ -49,7 +49,7 @@ const j = [
   "/ebook-reader/manage",
   "/ebook-reader/settings",
   "/ebook-reader"
-], g = "1661519479719", n = self, b = `build:${g}`, w = new Set(k), f = j.concat(x).concat(k), v = new Set(f);
+], g = "1661952917317", n = self, b = `build:${g}`, w = new Set(k), f = j.concat(x).concat(k), v = new Set(f);
 n.addEventListener("install", (e) => {
   n.skipWaiting(), e.waitUntil(caches.open(b).then((a) => a.addAll(f)));
 });

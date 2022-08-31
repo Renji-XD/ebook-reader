@@ -1,4 +1,4 @@
-import{s as i}from"./dialog-manager-cce8b3b0.js";import{k as u,l as C}from"./format-page-title-bcdbc7b8.js";/**
+import{s as i}from"./dialog-manager-cce8b3b0.js";import{k as u,l as C}from"./format-page-title-36cd2a0a.js";/**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
  * All rights reserved.
