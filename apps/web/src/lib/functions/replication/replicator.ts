@@ -48,6 +48,8 @@ export async function importData(
         let currentTitle = file.name;
 
         try {
+          throwIfAborted(cancelSignal);
+
           const bookContent = await (file.name.endsWith('.epub')
             ? loadEpub(file, document, lastBookModified)
             : loadHtmlz(file, document, lastBookModified));
@@ -113,7 +115,7 @@ export async function replicateData(
     getStorageHandler(source, window),
     getStorageHandler(target, window)
   ]);
-  const baseProgress = dataToReplicate.length * 200; // source retrieval -> target storage per data type
+  const baseProgress = dataToReplicate.length * 200 + 100; // source retrieval -> target storage per data type + cover
   const maxProgress = baseProgress * contexts.length;
   const isBrowserTarget = target === StorageKey.BROWSER;
   const processBookData = dataToReplicate.includes(StorageDataType.DATA);
@@ -135,6 +137,8 @@ export async function replicateData(
     replicationTasks.push(
       replicationLimiter(async () => {
         try {
+          throwIfAborted(cancelSignal);
+
           let dataProcessed = false;
 
           if (processBookData) {
@@ -162,8 +166,14 @@ export async function replicateData(
               database.bookmarksChanged$.next();
             }
 
-            reportProgressStep(cancelSignal);
+            reportProgressStep(cancelSignal, !dataProcessed);
           }
+
+          if (dataProcessed) {
+            await targetHandler.saveCover(context);
+          }
+
+          reportProgressStep(cancelSignal);
 
           processed += 1;
         } catch (error: any) {
