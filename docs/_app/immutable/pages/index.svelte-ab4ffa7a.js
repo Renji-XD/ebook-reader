@@ -1,4 +1,4 @@
-import{S as m,i as f,n as p,s as _,k as b,G as v,f as i,c as h,l as $,m as g,a as c,_ as y,E as u}from"../chunks/index-df0cdd8f.js";import{K as d,L as k,k as x,u as E,Q as q}from"../chunks/format-page-title-609e4cb2.js";import"../chunks/singletons-a14e46a6.js";import"../chunks/dialog-manager-cce8b3b0.js";/**
+import{S as m,i as f,n as p,s as _,k as b,G as v,f as i,c as h,l as $,m as g,a as c,_ as y,E as u}from"../chunks/index-df0cdd8f.js";import{K as d,L as k,k as x,u as E,Q as q}from"../chunks/format-page-title-69f738c5.js";import"../chunks/singletons-a14e46a6.js";import"../chunks/dialog-manager-cce8b3b0.js";/**
  * @license BSD-3-Clause
  * Copyright (c) 2022, ッツ Reader Authors
  * All rights reserved.
