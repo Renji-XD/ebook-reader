@@ -4,30 +4,30 @@
  * All rights reserved.
  */
 function _(e) {
-  return Object.entries(e).map(([a, r]) => `${encodeURIComponent(a)}=${encodeURIComponent(r)}`).join("&");
+  return Object.entries(e).map(([o, r]) => `${encodeURIComponent(o)}=${encodeURIComponent(r)}`).join("&");
 }
 const j = [
-  "/ebook-reader/_app/immutable/start-1e71a22e.js",
-  "/ebook-reader/_app/immutable/pages/__layout.svelte-1ec64d48.js",
+  "/ebook-reader/_app/immutable/start-39dfde5d.js",
+  "/ebook-reader/_app/immutable/pages/__layout.svelte-f4f96ade.js",
   "/ebook-reader/_app/immutable/assets/__layout-7dc72dc4.css",
   "/ebook-reader/_app/immutable/pages/__error.svelte-7f42a0b4.js",
   "/ebook-reader/_app/immutable/pages/b/_id_integer_.svelte-706dcdbf.js",
-  "/ebook-reader/_app/immutable/pages/b/index.svelte-be45d639.js",
+  "/ebook-reader/_app/immutable/pages/b/index.svelte-f68ec56d.js",
   "/ebook-reader/_app/immutable/assets/index-a673c84c.css",
-  "/ebook-reader/_app/immutable/pages/index.svelte-ab4ffa7a.js",
-  "/ebook-reader/_app/immutable/pages/manage/index.svelte-a1e89aa0.js",
-  "/ebook-reader/_app/immutable/pages/settings/index.svelte-6afd40c0.js",
+  "/ebook-reader/_app/immutable/pages/index.svelte-8946b80c.js",
+  "/ebook-reader/_app/immutable/pages/manage/index.svelte-2760d253.js",
+  "/ebook-reader/_app/immutable/pages/settings/index.svelte-f68a023e.js",
   "/ebook-reader/_app/immutable/chunks/index-df0cdd8f.js",
   "/ebook-reader/_app/immutable/chunks/index-31b77272.js",
   "/ebook-reader/_app/immutable/chunks/singletons-a14e46a6.js",
   "/ebook-reader/_app/immutable/chunks/stores-b20e80ef.js",
   "/ebook-reader/_app/immutable/chunks/dialog-manager-cce8b3b0.js",
   "/ebook-reader/_app/immutable/chunks/utils-f9d0cd9e.js",
-  "/ebook-reader/_app/immutable/chunks/format-page-title-69f738c5.js",
-  "/ebook-reader/_app/immutable/chunks/theme-option-9f21fb4c.js",
-  "/ebook-reader/_app/immutable/chunks/merged-header-icon-5fb18629.js",
+  "/ebook-reader/_app/immutable/chunks/format-page-title-5527ed5f.js",
+  "/ebook-reader/_app/immutable/chunks/theme-option-d3e5aacf.js",
+  "/ebook-reader/_app/immutable/chunks/merged-header-icon-1bd0c082.js",
   "/ebook-reader/_app/immutable/assets/merged-header-icon-32503cb2.css",
-  "/ebook-reader/_app/immutable/chunks/index.es-73eb388e.js"
+  "/ebook-reader/_app/immutable/chunks/index.es-f6076bc5.js"
 ], x = [
   "/ebook-reader/.nojekyll",
   "/ebook-reader/apple-touch-icon.png",
@@ -49,41 +49,41 @@ const j = [
   "/ebook-reader/manage",
   "/ebook-reader/settings",
   "/ebook-reader"
-], f = "1661954566225", n = self, b = `build:${f}`, w = new Set(k), g = j.concat(x).concat(k), v = new Set(g);
+], f = "1665456163093", n = self, b = `build:${f}`, w = new Set(k), g = j.concat(x).concat(k), v = new Set(g);
 n.addEventListener("install", (e) => {
-  n.skipWaiting(), e.waitUntil(caches.open(b).then((a) => a.addAll(g)));
+  n.skipWaiting(), e.waitUntil(caches.open(b).then((o) => o.addAll(g)));
 });
 n.addEventListener("activate", (e) => {
-  e.waitUntil(caches.keys().then((a) => {
-    const r = a.filter((o) => o !== b);
-    return Promise.all(r.map((o) => caches.delete(o)));
+  e.waitUntil(caches.keys().then((o) => {
+    const r = o.filter((a) => a !== b);
+    return Promise.all(r.map((a) => caches.delete(a)));
   }));
 });
 n.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const a = new URL(e.request.url), r = a.protocol.startsWith("http"), o = a.hostname === n.location.hostname && a.port !== n.location.port, i = a.host === n.location.host, p = i && v.has(a.pathname), t = e.request.cache === "only-if-cached" && !p;
-  if (!(!r || o || t)) {
-    if (i && w.has(a.pathname)) {
-      const s = new Request(a.pathname);
+  const o = new URL(e.request.url), r = o.protocol.startsWith("http"), a = o.hostname === n.location.hostname && o.port !== n.location.port, i = o.host === n.location.host, p = i && v.has(o.pathname), t = e.request.cache === "only-if-cached" && !p;
+  if (!(!r || a || t)) {
+    if (i && w.has(o.pathname)) {
+      const s = new Request(o.pathname);
       e.respondWith(h(e.request, !1, b, s));
       return;
     }
     if (i) {
-      const s = p ? caches.match(a.pathname).then((c) => c != null ? c : fetch(e.request)) : y(e.request);
+      const s = p ? caches.match(o.pathname).then((c) => c != null ? c : fetch(e.request)) : y(e.request);
       if (s) {
         e.respondWith(s);
         return;
       }
     }
-    a.host === "fonts.googleapis.com" && e.respondWith(h(e.request));
+    o.host === "fonts.googleapis.com" && e.respondWith(h(e.request));
   }
 });
-async function h(e, a = !0, r, o) {
+async function h(e, o = !0, r, a) {
   const i = await caches.open(`other:${f}`), p = new AbortController();
   let t, s = !1, c = !1;
-  const l = () => r ? caches.match(o != null ? o : e, { cacheName: r }) : void 0, u = async () => {
-    if (!a)
+  const l = () => r ? caches.match(a != null ? a : e, { cacheName: r }) : void 0, u = async () => {
+    if (!o)
       return l();
     const d = await i.match(e);
     if (d)
@@ -95,7 +95,7 @@ async function h(e, a = !0, r, o) {
     const d = setTimeout(async () => {
       t = await u(), c = !0, !(!t || s) && p.abort();
     }, 1e3), m = await fetch(e, { signal: p.signal });
-    return s = !0, clearTimeout(d), a && i.put(e, m.clone()), m;
+    return s = !0, clearTimeout(d), o && i.put(e, m.clone()), m;
   } catch (d) {
     if (c || (t = await u()), t)
       return t;
@@ -103,9 +103,9 @@ async function h(e, a = !0, r, o) {
   }
 }
 function y(e) {
-  const a = new URL(e.url), o = /\/b\/(?<id>\d+)\/?(\?|$)/.exec(a.pathname);
-  if (o != null && o.groups)
-    return U(`/b?${_(o.groups)}`);
+  const o = new URL(e.url), a = /\/b\/(?<id>\d+)\/?(\?|$)/.exec(o.pathname);
+  if (a != null && a.groups)
+    return U(`/b?${_(a.groups)}`);
 }
 function U(e) {
   return new Response(null, {
