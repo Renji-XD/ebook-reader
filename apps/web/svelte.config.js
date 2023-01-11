@@ -14,11 +14,15 @@ const config = {
       postcss: true
     })
   ],
-
   kit: {
     adapter: adapter({
-      fallback: '404.html'
-    })
+      fallback: null,
+      pages: 'docs',
+      assets: 'docs'
+    }),
+    paths: {
+      base: '/ebook-reader'
+    }
   }
 };
 
