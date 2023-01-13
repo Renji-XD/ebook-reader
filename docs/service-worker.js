@@ -1,33 +1,33 @@
 const _ = [
-  "/ebook-reader/_app/immutable/assets/_layout-08dea49a.css",
+  "/ebook-reader/_app/immutable/assets/_layout-eb5a125d.css",
   "/ebook-reader/_app/immutable/assets/store-ad073191.css",
-  "/ebook-reader/_app/immutable/assets/_page-b843624e.css",
   "/ebook-reader/_app/immutable/assets/fa-32503cb2.css",
-  "/ebook-reader/_app/immutable/chunks/2-abdd9ffe.js",
-  "/ebook-reader/_app/immutable/chunks/index-6454b96b.js",
-  "/ebook-reader/_app/immutable/chunks/0-b5141ee8.js",
-  "/ebook-reader/_app/immutable/chunks/singletons-6176161c.js",
-  "/ebook-reader/_app/immutable/chunks/1-36f4ec71.js",
-  "/ebook-reader/_app/immutable/chunks/stores-6a6870f3.js",
-  "/ebook-reader/_app/immutable/chunks/3-5c73f605.js",
-  "/ebook-reader/_app/immutable/chunks/4-dc3892eb.js",
-  "/ebook-reader/_app/immutable/chunks/error-handler-df8dffd6.js",
-  "/ebook-reader/_app/immutable/components/pages/_page.svelte-0663697a.js",
-  "/ebook-reader/_app/immutable/chunks/format-page-title-2ca75b98.js",
-  "/ebook-reader/_app/immutable/components/pages/auth/_page.svelte-f52daa05.js",
-  "/ebook-reader/_app/immutable/components/error.svelte-5086bf37.js",
+  "/ebook-reader/_app/immutable/assets/_page-b843624e.css",
+  "/ebook-reader/_app/immutable/components/pages/_page.svelte-fbaddfa0.js",
+  "/ebook-reader/_app/immutable/chunks/index-cfdc196c.js",
   "/ebook-reader/_app/immutable/chunks/theme-option-f9f8f697.js",
-  "/ebook-reader/_app/immutable/chunks/5-ac78af10.js",
-  "/ebook-reader/_app/immutable/chunks/index-be8ea2fc.js",
-  "/ebook-reader/_app/immutable/chunks/merged-header-icon-bd37420f.js",
-  "/ebook-reader/_app/immutable/start-0aa89f42.js",
-  "/ebook-reader/_app/immutable/chunks/6-3a6d4a3c.js",
-  "/ebook-reader/_app/immutable/chunks/fa-f7462c86.js",
-  "/ebook-reader/_app/immutable/components/pages/manage/_page.svelte-4a308612.js",
-  "/ebook-reader/_app/immutable/components/pages/_layout.svelte-4d33e982.js",
-  "/ebook-reader/_app/immutable/components/pages/settings/_page.svelte-41497b11.js",
-  "/ebook-reader/_app/immutable/components/pages/b/_page.svelte-5b03b1c2.js",
-  "/ebook-reader/_app/immutable/chunks/store-12fb6ab6.js"
+  "/ebook-reader/_app/immutable/components/error.svelte-f5268613.js",
+  "/ebook-reader/_app/immutable/chunks/1-822ec354.js",
+  "/ebook-reader/_app/immutable/components/pages/auth/_page.svelte-d50deea4.js",
+  "/ebook-reader/_app/immutable/chunks/error-handler-df8dffd6.js",
+  "/ebook-reader/_app/immutable/chunks/singletons-d18d8c8a.js",
+  "/ebook-reader/_app/immutable/chunks/format-page-title-91f1c985.js",
+  "/ebook-reader/_app/immutable/chunks/5-aa6bddc0.js",
+  "/ebook-reader/_app/immutable/chunks/0-638dc48a.js",
+  "/ebook-reader/_app/immutable/chunks/2-cbaf8c81.js",
+  "/ebook-reader/_app/immutable/chunks/3-bbe64743.js",
+  "/ebook-reader/_app/immutable/chunks/stores-b581bec8.js",
+  "/ebook-reader/_app/immutable/chunks/fa-26600f17.js",
+  "/ebook-reader/_app/immutable/start-3c7e08a5.js",
+  "/ebook-reader/_app/immutable/chunks/6-1230cd13.js",
+  "/ebook-reader/_app/immutable/chunks/index-876111f7.js",
+  "/ebook-reader/_app/immutable/chunks/4-54f5e018.js",
+  "/ebook-reader/_app/immutable/chunks/merged-header-icon-fd5992a9.js",
+  "/ebook-reader/_app/immutable/components/pages/manage/_page.svelte-1ce1b800.js",
+  "/ebook-reader/_app/immutable/components/pages/_layout.svelte-2200b505.js",
+  "/ebook-reader/_app/immutable/components/pages/b/_page.svelte-11d5b370.js",
+  "/ebook-reader/_app/immutable/components/pages/settings/_page.svelte-6970330c.js",
+  "/ebook-reader/_app/immutable/chunks/store-980e8526.js"
 ], w = [
   "/ebook-reader/.nojekyll",
   "/ebook-reader/apple-touch-icon.png",
@@ -78,18 +78,18 @@ const _ = [
   "/ebook-reader/settings/__data.json",
   "/ebook-reader",
   "/ebook-reader/__data.json"
-], h = "1673563504461", v = "/ebook-reader";
+], h = "1673624046483", v = "/ebook-reader";
 function j(e) {
   return Object.entries(e).map(([o, r]) => `${encodeURIComponent(o)}=${encodeURIComponent(r)}`).join("&");
 }
-const n = self, p = `build:${h}`, x = new Set(m), g = _.concat(w).concat(m), R = new Set(g);
+const n = self, b = `build:${h}`, x = new Set(m), g = _.concat(w).concat(m), R = new Set(g);
 n.addEventListener("install", (e) => {
-  n.skipWaiting(), e.waitUntil(caches.open(p).then((o) => o.addAll(g)));
+  n.skipWaiting(), e.waitUntil(caches.open(b).then((o) => o.addAll(g)));
 });
 n.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then((o) => {
-      const r = o.filter((a) => a !== p);
+      const r = o.filter((a) => a !== b);
       return Promise.all(r.map((a) => caches.delete(a)));
     })
   );
@@ -97,17 +97,17 @@ n.addEventListener("activate", (e) => {
 n.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const o = new URL(e.request.url), r = o.protocol.startsWith("http"), a = o.hostname === n.location.hostname && o.port !== n.location.port, i = o.host === n.location.host, d = i && R.has(o.pathname), s = e.request.cache === "only-if-cached" && !d;
+  const o = new URL(e.request.url), r = o.protocol.startsWith("http"), a = o.hostname === n.location.hostname && o.port !== n.location.port, c = o.host === n.location.host, d = c && R.has(o.pathname), s = e.request.cache === "only-if-cached" && !d;
   if (!(!r || a || s)) {
-    if (i && x.has(o.pathname)) {
+    if (c && x.has(o.pathname)) {
       const t = new Request(o.pathname);
       e.respondWith(
-        l(e.request, !1, p, t)
+        l(e.request, !1, b, t)
       );
       return;
     }
-    if (i) {
-      const t = d ? caches.match(o.pathname).then((b) => b ?? fetch(e.request)) : y(e.request);
+    if (c) {
+      const t = d ? caches.match(o.pathname).then((p) => p ?? fetch(e.request)) : y(e.request);
       if (t) {
         e.respondWith(t);
         return;
@@ -117,26 +117,26 @@ n.addEventListener("fetch", (e) => {
   }
 });
 async function l(e, o = !0, r, a) {
-  const i = await caches.open(`other:${h}`), d = new AbortController();
-  let s, t = !1, b = !1;
+  const c = await caches.open(`other:${h}`), d = new AbortController();
+  let s, t = !1, p = !1;
   const f = () => r ? caches.match(a ?? e, { cacheName: r }) : void 0, u = async () => {
     if (!o)
       return f();
-    const c = await i.match(e);
-    if (c)
-      return c;
+    const i = await c.match(e);
+    if (i)
+      return i;
     if (!!r)
       return f();
   };
   try {
-    const c = setTimeout(async () => {
-      s = await u(), b = !0, !(!s || t) && d.abort();
+    const i = setTimeout(async () => {
+      s = await u(), p = !0, !(!s || t) && d.abort();
     }, 1e3), k = await fetch(e, { signal: d.signal });
-    return t = !0, clearTimeout(c), o && i.put(e, k.clone()), k;
-  } catch (c) {
-    if (b || (s = await u()), s)
+    return t = !0, clearTimeout(i), o && c.put(e, k.clone()), k;
+  } catch (i) {
+    if (p || (s = await u()), s)
       return s;
-    throw c;
+    throw i;
   }
 }
 function y(e) {
