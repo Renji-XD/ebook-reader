@@ -1,33 +1,34 @@
 const _ = [
-  "/ebook-reader/_app/immutable/assets/_layout-eb5a125d.css",
+  "/ebook-reader/_app/immutable/assets/_layout-243ebd44.css",
   "/ebook-reader/_app/immutable/assets/store-ad073191.css",
   "/ebook-reader/_app/immutable/assets/_page-b843624e.css",
   "/ebook-reader/_app/immutable/assets/fa-32503cb2.css",
-  "/ebook-reader/_app/immutable/chunks/stores-b581bec8.js",
-  "/ebook-reader/_app/immutable/components/pages/auth/_page.svelte-d50deea4.js",
-  "/ebook-reader/_app/immutable/components/pages/_page.svelte-fbaddfa0.js",
-  "/ebook-reader/_app/immutable/chunks/singletons-d18d8c8a.js",
-  "/ebook-reader/_app/immutable/chunks/format-page-title-91f1c985.js",
-  "/ebook-reader/_app/immutable/chunks/index-cfdc196c.js",
-  "/ebook-reader/_app/immutable/chunks/0-638dc48a.js",
-  "/ebook-reader/_app/immutable/components/error.svelte-f5268613.js",
-  "/ebook-reader/_app/immutable/start-7626b66b.js",
-  "/ebook-reader/_app/immutable/chunks/2-cbaf8c81.js",
-  "/ebook-reader/_app/immutable/chunks/theme-option-f9f8f697.js",
-  "/ebook-reader/_app/immutable/chunks/5-aa6bddc0.js",
-  "/ebook-reader/_app/immutable/chunks/3-bbe64743.js",
-  "/ebook-reader/_app/immutable/chunks/4-35fb26d0.js",
-  "/ebook-reader/_app/immutable/chunks/6-1230cd13.js",
+  "/ebook-reader/_app/immutable/components/pages/auth/_page.svelte-c786bd8a.js",
+  "/ebook-reader/_app/immutable/components/error.svelte-e274a964.js",
+  "/ebook-reader/_app/immutable/components/pages/_page.svelte-450b9239.js",
+  "/ebook-reader/_app/immutable/chunks/singletons-f66f3112.js",
+  "/ebook-reader/_app/immutable/chunks/2-12a0aba5.js",
+  "/ebook-reader/_app/immutable/chunks/3-1c6459a4.js",
+  "/ebook-reader/_app/immutable/chunks/6-cb2ddd68.js",
+  "/ebook-reader/_app/immutable/chunks/5-7b35523c.js",
+  "/ebook-reader/_app/immutable/chunks/index-b146a6c7.js",
+  "/ebook-reader/_app/immutable/chunks/4-f85e23ba.js",
+  "/ebook-reader/_app/immutable/chunks/fonts-e5a631ed.js",
+  "/ebook-reader/_app/immutable/chunks/format-page-title-256dab77.js",
+  "/ebook-reader/_app/immutable/chunks/fa-884f19f7.js",
   "/ebook-reader/_app/immutable/chunks/index-876111f7.js",
+  "/ebook-reader/_app/immutable/chunks/theme-option-f9f8f697.js",
+  "/ebook-reader/_app/immutable/chunks/stores-708a1552.js",
+  "/ebook-reader/_app/immutable/chunks/1-5c958862.js",
+  "/ebook-reader/_app/immutable/chunks/0-15c12ac2.js",
+  "/ebook-reader/_app/immutable/start-8bf866bc.js",
+  "/ebook-reader/_app/immutable/chunks/merged-header-icon-4609f9c6.js",
+  "/ebook-reader/_app/immutable/components/pages/manage/_page.svelte-0ebcaf81.js",
+  "/ebook-reader/_app/immutable/components/pages/settings/_page.svelte-20344ec7.js",
+  "/ebook-reader/_app/immutable/components/pages/b/_page.svelte-f1bb578d.js",
+  "/ebook-reader/_app/immutable/components/pages/_layout.svelte-5f2466e4.js",
   "/ebook-reader/_app/immutable/chunks/error-handler-df8dffd6.js",
-  "/ebook-reader/_app/immutable/chunks/fa-26600f17.js",
-  "/ebook-reader/_app/immutable/chunks/merged-header-icon-fd5992a9.js",
-  "/ebook-reader/_app/immutable/components/pages/_layout.svelte-2200b505.js",
-  "/ebook-reader/_app/immutable/chunks/1-822ec354.js",
-  "/ebook-reader/_app/immutable/components/pages/manage/_page.svelte-1ce1b800.js",
-  "/ebook-reader/_app/immutable/components/pages/settings/_page.svelte-6970330c.js",
-  "/ebook-reader/_app/immutable/components/pages/b/_page.svelte-2787a6f7.js",
-  "/ebook-reader/_app/immutable/chunks/store-980e8526.js"
+  "/ebook-reader/_app/immutable/chunks/store-34c5451e.js"
 ], w = [
   "/ebook-reader/.nojekyll",
   "/ebook-reader/apple-touch-icon.png",
@@ -67,7 +68,7 @@ const _ = [
   "/ebook-reader/icons/regular-icon@512x512.png",
   "/ebook-reader/manifest.webmanifest",
   "/ebook-reader/safari-pinned-tab.svg"
-], m = [
+], l = [
   "/ebook-reader/auth",
   "/ebook-reader/auth/__data.json",
   "/ebook-reader/b",
@@ -78,51 +79,57 @@ const _ = [
   "/ebook-reader/settings/__data.json",
   "/ebook-reader",
   "/ebook-reader/__data.json"
-], h = "1673628120910", v = "/ebook-reader";
-function j(e) {
+], h = "1673877337887", j = "/ebook-reader";
+function v(e) {
   return Object.entries(e).map(([o, r]) => `${encodeURIComponent(o)}=${encodeURIComponent(r)}`).join("&");
 }
-const n = self, b = `build:${h}`, x = new Set(m), g = _.concat(w).concat(m), R = new Set(g);
-n.addEventListener("install", (e) => {
-  n.skipWaiting(), e.waitUntil(caches.open(b).then((o) => o.addAll(g)));
+const x = "ttu-userfonts", c = self, b = `build:${h}`, R = new Set(l), g = _.concat(w).concat(l), y = new Set(g);
+c.addEventListener("install", (e) => {
+  c.skipWaiting(), e.waitUntil(caches.open(b).then((o) => o.addAll(g)));
 });
-n.addEventListener("activate", (e) => {
+c.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then((o) => {
-      const r = o.filter((a) => a !== b);
+      const r = o.filter(
+        (a) => a !== b && a !== x
+      );
       return Promise.all(r.map((a) => caches.delete(a)));
     })
   );
 });
-n.addEventListener("fetch", (e) => {
+c.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const o = new URL(e.request.url), r = o.protocol.startsWith("http"), a = o.hostname === n.location.hostname && o.port !== n.location.port, c = o.host === n.location.host, d = c && R.has(o.pathname), s = e.request.cache === "only-if-cached" && !d;
-  if (!(!r || a || s)) {
-    if (c && x.has(o.pathname)) {
-      const t = new Request(o.pathname);
+  const o = new URL(e.request.url), r = o.protocol.startsWith("http"), a = o.hostname === c.location.hostname && o.port !== c.location.port, t = o.host === c.location.host, p = t && y.has(o.pathname), n = e.request.cache === "only-if-cached" && !p;
+  if (!(!r || a || n)) {
+    if (t && R.has(o.pathname)) {
+      const s = new Request(o.pathname);
       e.respondWith(
-        l(e.request, !1, b, t)
+        k(e.request, !1, b, s)
       );
       return;
     }
-    if (c) {
-      const t = d ? caches.match(o.pathname).then((p) => p ?? fetch(e.request)) : y(e.request);
-      if (t) {
-        e.respondWith(t);
+    if (t && o.pathname.startsWith("/userfonts/")) {
+      e.respondWith(caches.match(o.pathname).then((s) => s ?? new Response()));
+      return;
+    }
+    if (t) {
+      const s = p ? caches.match(o.pathname).then((d) => d ?? fetch(e.request)) : C(e.request);
+      if (s) {
+        e.respondWith(s);
         return;
       }
     }
-    o.host === "fonts.googleapis.com" && e.respondWith(l(e.request));
+    o.host === "fonts.googleapis.com" && e.respondWith(k(e.request));
   }
 });
-async function l(e, o = !0, r, a) {
-  const c = await caches.open(`other:${h}`), d = new AbortController();
-  let s, t = !1, p = !1;
+async function k(e, o = !0, r, a) {
+  const t = await caches.open(`other:${h}`), p = new AbortController();
+  let n, s = !1, d = !1;
   const f = () => r ? caches.match(a ?? e, { cacheName: r }) : void 0, u = async () => {
     if (!o)
       return f();
-    const i = await c.match(e);
+    const i = await t.match(e);
     if (i)
       return i;
     if (!!r)
@@ -130,19 +137,19 @@ async function l(e, o = !0, r, a) {
   };
   try {
     const i = setTimeout(async () => {
-      s = await u(), p = !0, !(!s || t) && d.abort();
-    }, 1e3), k = await fetch(e, { signal: d.signal });
-    return t = !0, clearTimeout(i), o && c.put(e, k.clone()), k;
+      n = await u(), d = !0, !(!n || s) && p.abort();
+    }, 1e3), m = await fetch(e, { signal: p.signal });
+    return s = !0, clearTimeout(i), o && t.put(e, m.clone()), m;
   } catch (i) {
-    if (p || (s = await u()), s)
-      return s;
+    if (d || (n = await u()), n)
+      return n;
     throw i;
   }
 }
-function y(e) {
+function C(e) {
   const o = new URL(e.url), a = /\/b\/(?<id>\d+)\/?(\?|$)/.exec(o.pathname);
   if (a != null && a.groups)
-    return U(`${[[v]]}/b?${j(a.groups)}`);
+    return U(`${[[j]]}/b?${v(a.groups)}`);
 }
 function U(e) {
   return new Response(null, {
