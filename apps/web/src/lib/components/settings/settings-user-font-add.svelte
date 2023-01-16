@@ -109,7 +109,7 @@
     <label role="button" class={`${inputClasses} w-40 text-center py-2 hover:opacity-25 mr-2`}>
       <input
         type="file"
-        accept="font/woff2,font/woff,font/ttf,font/otf"
+        accept=".woff2,.woff,.ttf,.otf"
         class="hidden"
         bind:this={fileElement}
         on:change={handleFileChange}
